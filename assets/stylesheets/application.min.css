@@ -427,6 +427,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1 {
   color: #c69;
+  font-family: 'SourceSansPro-Regular', sans-serif;
   font-size: 48px; }
 
 h2 {
@@ -827,9 +828,8 @@ category: base
 .l-flex {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
   max-width: 1080px;
-  margin: 0 auto; }
+  margin: auto; }
 
 .l-container {
   max-width: 1080px;
@@ -1120,6 +1120,11 @@ category: typography
   color: #fff;
   text-align: center;
   padding: 50px 0; }
+  .callout:hover .callout__button, .callout:active .callout__button, .callout:focus .callout__button {
+    border-bottom: none;
+    transform: translateY(-10px); }
+    .callout:hover .callout__button:before, .callout:active .callout__button:before, .callout:focus .callout__button:before {
+      transform: translateY(10px); }
 
 .callout__heading {
   color: #fff; }
@@ -1128,10 +1133,15 @@ category: typography
   font-size: 32px; }
 
 .callout__excerpt {
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 0 auto;
+  max-width: 75%; }
 
 .callout__link {
   color: #036;
+  position: relative;
+  top: 1px;
+  left: 1px;
   font-family: 'SourceSansPro-Regular', sans-serif; }
   .callout__link:visited {
     color: #036; }
@@ -1154,11 +1164,6 @@ category: typography
   vertical-align: middle; }
   .callout__button:visited {
     color: #fff; }
-  .callout__button:hover, .callout__button:active, .callout__button:focus {
-    border-bottom: none;
-    transform: translateY(-10px); }
-    .callout__button:hover:before, .callout__button:active:before, .callout__button:focus:before {
-      transform: translateY(10px); }
   .callout__button:before {
     position: absolute;
     bottom: 0;
@@ -1171,9 +1176,19 @@ category: typography
     transition-property: transform;
     z-index: -1; }
 
-.logo {
+.header {
+  display: block; }
+  .header:hover, .header:active, .header:focus {
+    border-bottom: none;
+    outline: 3px solid #c69; }
+
+.header__logo {
   display: block;
   margin: 0 auto;
+  height: 220px;
   width: 220px; }
-  .logo:hover, .logo:active, .logo:focus {
+  .header__logo:hover, .header__logo:active, .header__logo:focus {
     border-bottom: none; }
+
+.header__heading {
+  text-align: center; }

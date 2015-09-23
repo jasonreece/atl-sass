@@ -7,6 +7,16 @@
   color: color('white');
   text-align: center;
   padding: 50px 0;
+  @include attention() {
+    // callout button
+    .callout__button {
+      border-bottom: none;
+      transform: translateY(-10px);
+      &:before {
+        transform: translateY(10px);
+      }
+    }
+  }
 }
 
 .callout__heading {
@@ -19,10 +29,15 @@
 
 .callout__excerpt {
   font-size: font-size('medium');
+  margin: 0 auto;
+  max-width: 75%;
 }
 
 .callout__link {
   @include link-color(color('midnight-blue'));
+  position: relative;
+  top: 1px;
+  left: 1px;
   font-family: sans('regular');
 }
 
@@ -42,13 +57,7 @@
   transition-duration: 0.3s;
   transition-property: transform;
   vertical-align: middle;
-  @include attention() {
-    border-bottom: none;
-    transform: translateY(-10px);
-    &:before {
-      transform: translateY(10px);
-    }
-  }
+
 
   &:before {
     position: absolute;
