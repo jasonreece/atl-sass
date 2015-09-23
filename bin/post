@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# $1 filename
+# $2 title
+# $3 excerpt
+# $4 date
+# $5 time
+
+FILEPATH="_posts/"
+FILENAME=$(echo $1 | tr '[:upper:]' '[:lower:]' | sed -e 's/ /-/g' | tr -d \'\" | awk '{print $1".md"}')
+
+touch $FILEPATH/$FILENAME
+
+echo '---' >> $FILEPATH/$FILENAME
+
+echo 'layout: post' >> $FILEPATH/$FILENAME
+
+echo 'title: '$2 >> $FILEPATH/$FILENAME
+
+echo 'excerpt: '$3 >> $FILEPATH/$FILENAME
+
+echo 'date: '$4 >> $FILEPATH/$FILENAME
+
+echo 'time: '$5 >> $FILEPATH/$FILENAME
+
+echo '---' >> $FILEPATH/$FILENAME
+
+echo 'You have created a file named:' $FILENAME
+
+echo 'The title is: ' $2
+
+echo 'The excerpt is: ' $3
+
+echo 'The date is: ' $4
+
+echo 'The time is: ' $5
