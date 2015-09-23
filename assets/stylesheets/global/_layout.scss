@@ -1,0 +1,24 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - layout
+// global layout classes - height, width, padding, margin, etc.
+
+.l-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.l-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 25px 20px;
+  @include breakpoint(bp('tablet')){
+    padding: 50px 20px;
+  }
+}
+
+.l-padding-vert {
+  padding: 25px 0;
+}

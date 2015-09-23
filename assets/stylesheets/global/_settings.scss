@@ -1,0 +1,103 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - settings
+// global maps and variables
+
+// - - colors
+
+$colors: (
+  'hopbush': #c69,
+  'bouquet': #b37399,
+  'venus': #998099,
+  'patina': #699,
+  'nebula': #d2e1dd,
+  'white': #fff,
+  'dawn-pink': #f2ece4,
+  'wafer': #e1d7d2,
+  'iron': #dadbdf,
+  'regent-grey': #808c99,
+  'pale-sky': #6b717f,
+  'midnight-blue': #036
+);
+
+// - - typography
+
+$fonts: (
+  // creates @font-face rulesets
+  'font-face': (
+    'sans': (
+      'SourceSansPro-Black',
+      'SourceSansPro-BlackItalic',
+      'SourceSansPro-Bold',
+      'SourceSansPro-BoldItalic',
+      'SourceSansPro-ExtraLight',
+      'SourceSansPro-ExtraLightItalic',
+      'SourceSansPro-Italic',
+      'SourceSansPro-Light',
+      'SourceSansPro-LightItalic',
+      'SourceSansPro-Regular',
+      'SourceSansPro-Semibold',
+      'SourceSansPro-SemiboldItalic'
+    ),
+    'serif': (
+      'SourceSerifPro-Bold',
+      'SourceSerifPro-Regular',
+      'SourceSerifPro-Semibold'
+    ),
+    'mono': (
+      'SourceCodePro-Black',
+      'SourceCodePro-Bold',
+      'SourceCodePro-ExtraLight',
+      'SourceCodePro-Light',
+      'SourceCodePro-Medium',
+      'SourceCodePro-Regular',
+      'SourceCodePro-Semibold'
+    )
+  ),
+  // creates font stack for font-family declarations
+  // used with font-family function
+  'font-family': (
+    'sans': (
+      'black': ('SourceSansPro-Black', sans-serif),
+      'black-italic': ('SourceSansPro-BlackItalic', sans-serif),
+      'bold': ('SourceSansPro-Bold', sans-serif),
+      'bold-italic': ('SourceSansPro-BoldItalic', sans-serif),
+      'extra-light': ('SourceSansPro-ExtraLight', sans-serif),
+      'extra-light-italic': ('SourceSansPro-ExtraLightItalic', sans-serif),
+      'italic': ('SourceSansPro-Italic', sans-serif),
+      'light': ('SourceSansPro-Light', sans-serif),
+      'light-italic': ('SourceSansPro-LightItalic', sans-serif),
+      'regular': ('SourceSansPro-Regular', sans-serif),
+      'semibold': ('SourceSansPro-Semibold', sans-serif),
+      'semibold-italic': ('SourceSansPro-SemiboldItalic', sans-serif)
+    ),
+    'serif': (
+      'bold': ('SourceSerifPro-Bold', Georgia, 'Times New Roman', Times, serif),
+      'regular': ('SourceSerifPro-Regular', Georgia, 'Times New Roman', Times, serif),
+      'semibold': ('SourceSerifPro-SemiBold', Georgia, 'Times New Roman', Times, serif)
+    ),
+    'mono': (
+      'black': ('SourceCodePro-Black', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace),
+      'bold': ('SourceCodePro-Bold', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace),
+      'extra-light': ('SourceCodePro-ExtraLight', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace),
+      'medium': ('SourceCodePro-Medium', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace),
+      'regular': ('SourceCodePro-Regular', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace),
+      'semibold': ('SourceCodePro-Semibold', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace)
+    )
+  ),
+  // creates font sizes, used with font-size @function
+  // font-size(font-size-base * font-size multiplier * 1px)
+  'font-size-base': 16,
+  'font-size-multiplier': (
+    xl: 3,
+    large: 2,
+    medium: 1.25 ,
+    small: 0.75
+  )
+);
+
+// - - breakpoints
+$breakpoints: (
+  'mobile': 480px,
+  'tablet': 768px,
+  'desktop': 960px
+);

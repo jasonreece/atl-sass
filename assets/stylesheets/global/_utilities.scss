@@ -1,0 +1,142 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - utilities
+// placeholders extends, mixins, functions, and utility classes
+
+
+// - - - - - - - - - - - - - - - - - - -
+// - - placeholder extends
+
+
+// - - - - - - - - - - - - - - - - - - -
+// - - mixins
+
+// - - clearfix
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  & {
+    *zoom: 1;
+  }
+}
+
+// - - breakpoint
+// adds responsive breakpoints.
+@mixin breakpoint($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+// - - attention
+// adds accessibility pseudo selectors to hover states.
+@mixin attention() {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - -
+// - - sets link color for element and visited pseudo class
+@mixin link-color($color) {
+  color: $color;
+  &:visited {
+    color: $color;
+  }
+}
+
+
+// - - - - - - - - - - - - - - - - - - -
+// - - functions
+
+// map get on nested lists
+// usage: @each $key, $value in map-deep-get($fonts, 'font-size-multiplier') {...}
+// returns: (large: 3, medium: 1.5 , small: 0.75)
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+// grab breakpoint from $breakpoints map
+@function bp($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return map-get($breakpoints, $key);
+  }
+  @warn "Unknown `#{$key}` in $breakpoints.";
+  @return null;
+}
+
+// sets font-family with key from the roboto list
+// usage: font-family: sans('thin');
+// returns: "Roboto-Thin", sans-serif
+@function sans($key) {
+  $font: map-deep-get($fonts, 'font-family', 'sans');
+  @if map-has-key($font, $key) {
+    @return map-get($font, $key);
+  }
+  @warn "Unknown `#{$key}` in $fonts.";
+  @return null;
+}
+
+// sets font-family with key from the aileron list
+// usage: font-family: serif('thin');
+// returns: "Aileron-Thin", sans-serif
+@function serif($key) {
+  $font: map-deep-get($fonts, 'font-family', 'serif');
+  @if map-has-key($font, $key) {
+    @return map-get($font, $key);
+  }
+  @warn "Unknown `#{$key}` in $fonts.";
+  @return null;
+}
+
+// sets font-family with key from the aileron list
+// usage: font-family: serif('thin');
+// returns: "Aileron-Thin", sans-serif
+@function mono($key) {
+  $font: map-deep-get($fonts, 'font-family', 'mono');
+  @if map-has-key($font, $key) {
+    @return map-get($font, $key);
+  }
+  @warn "Unknown `#{$key}` in $fonts.";
+  @return null;
+}
+
+// sets font size by multiplying a key from the font-size-multiplier list, and the font-base-size. both are set in the $fonts map
+// usage: font-size: font-size('large');
+// returns: 60px
+@function font-size($key) {
+  $font-sizes: map-get($fonts, 'font-size-multiplier');
+  @if map-has-key($font-sizes, $key) {
+    @return map-get($fonts, 'font-size-base') * map-get($font-sizes, $key) * 1px;
+  }
+  @warn "Unknown `#{$key}` in $fonts.";
+  @return null;
+}
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @warn "Unknown `#{$key}` in $fonts.";
+  @return null;
+}
+
+// - - grid
+
+
+// - - - - - - - - - - - - - - - - - - -
+// - - utilities
+
+.u-tac {
+  text-align: center;
+}

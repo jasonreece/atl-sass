@@ -1,0 +1,145 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - typography
+// global typography styles
+
+// create utility classes for each sans font
+@each $key, $value in map-deep-get($fonts, 'font-family', 'sans'){
+  .t-sans-#{$key}{
+    font-family: $value;
+  }
+}
+
+/*doc
+---
+title: font families - SourceSansPro
+name: 01/font-families/sourcesanspro
+category: typography
+---
+
+```html_example
+<h1 class="t-sans-extra-light">SourceSansPro Extra Light</h1>
+<h1 class="t-sans-extra-light-italic">SourceSansPro Extra Light Italic</h1>
+<h1 class="t-sans-light">SourceSansPro Light</h1>
+<h1 class="t-sans-light-italic">SourceSansPro Light Italic</h1>
+<h1 class="t-sans-regular">SourceSansPro Regular</h1>
+<h1 class="t-sans-italic">SourceSansPro Italic</h1>
+<h1 class="t-sans-semibold">SourceSansPro Semibold</h1>
+<h1 class="t-sans-semibold-italic">SourceSansPro Semibold Italic</h1>
+<h1 class="t-sans-bold">SourceSansPro Bold</h1>
+<h1 class="t-sans-bold-italic">SourceSansPro Bold Italic</h1>
+<h1 class="t-sans-black">SourceSansPro Black</h1>
+<h1 class="t-sans-black-italic">SourceSansPro Black Italic</h1>
+```
+*/
+
+// create utility classes for each serif font
+@each $key, $value in map-deep-get($fonts, 'font-family', 'serif'){
+  .t-serif-#{$key}{
+    font-family: $value;
+  }
+}
+
+/*doc
+---
+title: font families - SourceSerifPro
+name: 02/font-families/sourceserifpro
+category: typography
+---
+
+```html_example
+<h1 class="t-serif-regular">SourceSerifPro Regular</h1>
+<h1 class="t-serif-semibold">SourceSerifPro Semibold</h1>
+<h1 class="t-serif-bold">SourceSerifPro Bold</h1>
+```
+*/
+
+// create utility classes for each mono font
+@each $key, $value in map-deep-get($fonts, 'font-family', 'mono'){
+  .t-mono-#{$key}{
+    font-family: $value;
+  }
+}
+
+/*doc
+---
+title: font families - SourceCodePro
+name: 03/font-families/sourcecodepro
+category: typography
+---
+
+```html_example
+<h1 class="t-mono-extra-light">SourceCodePro Extra Light</h1>
+<h1 class="t-mono-bold-regular">SourceCodePro Regular</h1>
+<h1 class="t-mono-bold-medium">SourceCodePro Medium</h1>
+<h1 class="t-mono-bold-semibold">SourceCodePro Semibold</h1>
+<h1 class="t-mono-bold">SourceCodePro Bold</h1>
+<h1 class="t-mono-black">SourceCodePro Black</h1>
+```
+*/
+
+@each $key, $value in map-get($fonts, 'font-size-multiplier') {
+  .t-size-#{$key} {
+    font-size: font-size($key);
+  }
+}
+
+/*doc
+---
+title: font sizes
+name: 03/font-sizes
+category: typography
+---
+
+```html_example
+<h1 class="t-size-xl">This is an extra large heading</h1>
+<p>This is a test paragraph.</p>
+<h1 class="t-size-large">This is a large heading</h1>
+<p>This is a test paragraph.</p>
+<h1 class="t-size-medium">This is a medium heading</h1>
+<p>This is a test paragraph.</p>
+<h1 class="t-size-small">This is a small heading</h1>
+<p>This is a test paragraph.</p>
+```
+*/
+
+@each $key, $value in $colors {
+  .t-color-#{$key} {
+    color: $value;
+  }
+}
+
+/*doc
+---
+title: font colors
+name: 04/font-colors
+category: typography
+---
+
+```html_example
+
+<h1 class="t-color-hopbush">hopbush</h1>
+<p class="t-color-hopbush">with a test paragraph</p>
+<h1 class="t-color-bouquet">bouquet</h1>
+<p class="t-color-bouquet">with a test paragraph</p>
+<h1 class="t-color-venus">venus</h1>
+<p class="t-color-venus">with a test paragraph</p>
+<h1 class="t-color-patina">patina</h1>
+<p class="t-color-patina">with a test paragraph</p>
+<h1 class="t-color-nebula">nebula</h1>
+<p class="t-color-nebula">with a test paragraph</p>
+<h1 class="t-color-white">white</h1>
+<p class="t-color-white">with a test paragraph</p>
+<h1 class="t-color-dawn-pink">dawn pink</h1>
+<p class="t-color-dawn-pink">with a test paragraph</p>
+<h1 class="t-color-wafer">wafer</h1>
+<p class="t-color-wafer">with a test paragraph</p>
+<h1 class="t-color-iron">iron</h1>
+<p class="t-color-iron">with a test paragraph</p>
+<h1 class="t-color-regent-grey">regent grey</h1>
+<p class="t-color-regent-grey">with a test paragraph</p>
+<h1 class="t-color-pale-sky">pale sky</h1>
+<p class="t-color-pale-sky">with a test paragraph</p>
+<h1 class="t-color-midnight-blue">midnight blue</h1>
+<p class="t-color-midnight-blue">with a test paragraph</p>
+```
+*/

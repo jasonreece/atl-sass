@@ -1,0 +1,697 @@
+---
+layout: default
+css_library:
+  - hologram-css/github.css
+  - hologram-css/doc.css
+---
+
+<div class="l-container">
+  <nav>
+    <ul class="hologram-list">
+    
+      <li><a href="index.html">base</a></li>
+    
+      <li><a href="skin.html">skin</a></li>
+    
+      <li><a href="typography.html">typography</a></li>
+    
+    </ul>
+  </nav>
+
+  <h1> styles</h1>
+
+  <section class="content">
+    <ul class="hologram-list">
+    
+      <li><a href="#01/headings">headings</a></li>
+    
+      <li><a href="#02/block-level-elements">block level elements</a></li>
+    
+      <li><a href="#03/lists">lists</a></li>
+    
+      <li><a href="#04/text">text</a></li>
+    
+      <li><a href="#05/forms">forms</a></li>
+    
+      <li><a href="#06/tables">tables</a></li>
+    
+      <li><a href="#07/html5-elements">html5 elements</a></li>
+    
+    </ul>
+<h1 id="01/headings" class="styleguide">headings</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <article aria-label="headings">
+  <h1>This is 1st level heading</h1>
+  <p>This is a test paragraph.</p>
+  <h2>This is 2nd level heading</h2>
+  <p>This is a test paragraph.</p>
+  <h3>This is 3rd level heading</h3>
+  <p>This is a test paragraph.</p>
+  <h4>This is 4th level heading</h4>
+  <p>This is a test paragraph.</p>
+  <h5>This is 5th level heading</h5>
+  <p>This is a test paragraph.</p>
+  <h6>This is 6th level heading</h6>
+  <p>This is a test paragraph.</p>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;article</span> <span class="na">aria-label=</span><span class="s">"headings"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>This is 1st level heading<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a test paragraph.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>This is 2nd level heading<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a test paragraph.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h3&gt;</span>This is 3rd level heading<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a test paragraph.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>This is 4th level heading<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a test paragraph.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h5&gt;</span>This is 5th level heading<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a test paragraph.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;h6&gt;</span>This is 6th level heading<span class="nt">&lt;/h6&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a test paragraph.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="02/block-level-elements" class="styleguide">block level elements</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <article>
+  <p>This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of <strong>user style sheets</strong>. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.</p>
+
+  <p>This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.</p>
+
+  <div>This is a <code>div</code> element. Authors may use such elements instead of paragraph markup for various reasons. (End of <code>div</code>.)</div>
+
+  <blockquote>
+    <p>This is a block quotation containing a single paragraph. Well, not quite, since this is not <em>really</em> quoted text, but I hope you understand the point. After all, this page does not use HTML markup very normally anyway.</p>
+  </blockquote>
+
+  <p>The following contains address information about the author, in an <code>address</code> element.</p>
+
+  <address>
+    <a href="../somelink.html" lang="fr" hreflang="en">Mon nom en francais</a>,
+    <a href="mailto:example@example.com">example@example.com</a><br>
+    3 Rue Jules Ferry, Neuilly Sur Seine, France 94000
+  </address>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a normal paragraph (<span class="nt">&lt;code&gt;</span>p<span class="nt">&lt;/code&gt;</span> element). To add some length to it, let us mention that this page was primarily written for testing the effect of <span class="nt">&lt;strong&gt;</span>user style sheets<span class="nt">&lt;/strong&gt;</span>. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;div&gt;</span>This is a <span class="nt">&lt;code&gt;</span>div<span class="nt">&lt;/code&gt;</span> element. Authors may use such elements instead of paragraph markup for various reasons. (End of <span class="nt">&lt;code&gt;</span>div<span class="nt">&lt;/code&gt;</span>.)<span class="nt">&lt;/div&gt;</span>
+
+  <span class="nt">&lt;blockquote&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This is a block quotation containing a single paragraph. Well, not quite, since this is not <span class="nt">&lt;em&gt;</span>really<span class="nt">&lt;/em&gt;</span> quoted text, but I hope you understand the point. After all, this page does not use HTML markup very normally anyway.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/blockquote&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>The following contains address information about the author, in an <span class="nt">&lt;code&gt;</span>address<span class="nt">&lt;/code&gt;</span> element.<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;address&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../somelink.html"</span> <span class="na">lang=</span><span class="s">"fr"</span> <span class="na">hreflang=</span><span class="s">"en"</span><span class="nt">&gt;</span>Mon nom en francais<span class="nt">&lt;/a&gt;</span>,
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"mailto:example@example.com"</span><span class="nt">&gt;</span>example@example.com<span class="nt">&lt;/a&gt;&lt;br&gt;</span>
+    3 Rue Jules Ferry, Neuilly Sur Seine, France 94000
+  <span class="nt">&lt;/address&gt;</span>
+<span class="nt">&lt;/article&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="03/lists" class="styleguide">lists</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <article>
+  <p>This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".</p>
+  <ul>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer. Note that for short items lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li>
+    <li> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li>
+  </ul>
+
+  <p>The following is a <code>menu</code> list:</p>
+  <menu>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.</li>
+  </menu>
+
+  <p>The following is a <code>dir</code> list:</p>
+  <dir>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.</li>
+  </dir>
+
+  <p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".</p>
+  <ol>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer. Note that if items are short, lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li>
+    <li> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li>
+  </ol>
+
+  <p>This is a paragraph before a <strong>definition</strong> list (<code>dl</code>). In principle, such a list should consist of <em>terms</em> and associated definitions. But many authors use <code>dl</code> elements for fancy "layout" things. Usually the effect is not <em>too</em> bad, if you design user style sheet rules for <code>dl</code> which are suitable for real definition lists.</p>
+  <dl>
+    <dt> recursion</dt>
+    <dd> see recursion</dd>
+    <dt> recursion, indirect</dt>
+    <dd> see indirect recursion</dd>
+    <dt> indirect recursion</dt>
+    <dd> see recursion, indirect</dd>
+    <dt> term</dt>
+    <dd> a word or other expression taken into specific use in a well-defined meaning, which is often defined rather rigorously, even formally, and may differ quite a lot from an everyday meaning</dd>
+  </dl>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is a paragraph before an <span class="nt">&lt;strong&gt;</span>unnumbered<span class="nt">&lt;/strong&gt;</span> list (<span class="nt">&lt;code&gt;</span>ul<span class="nt">&lt;/code&gt;</span>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span> One.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Two.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Three. Well, probably this list item should be longer. Note that for short items lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>The following is a <span class="nt">&lt;code&gt;</span>menu<span class="nt">&lt;/code&gt;</span> list:<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;menu&gt;</span>
+    <span class="nt">&lt;li&gt;</span> One.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Two.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/menu&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>The following is a <span class="nt">&lt;code&gt;</span>dir<span class="nt">&lt;/code&gt;</span> list:<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;dir&gt;</span>
+    <span class="nt">&lt;li&gt;</span> One.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Two.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/dir&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>This is a paragraph before a <span class="nt">&lt;strong&gt;</span>numbered<span class="nt">&lt;/strong&gt;</span> list (<span class="nt">&lt;code&gt;</span>ol<span class="nt">&lt;/code&gt;</span>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;ol&gt;</span>
+    <span class="nt">&lt;li&gt;</span> One.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Two.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Three. Well, probably this list item should be longer. Note that if items are short, lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>This is a paragraph before a <span class="nt">&lt;strong&gt;</span>definition<span class="nt">&lt;/strong&gt;</span> list (<span class="nt">&lt;code&gt;</span>dl<span class="nt">&lt;/code&gt;</span>). In principle, such a list should consist of <span class="nt">&lt;em&gt;</span>terms<span class="nt">&lt;/em&gt;</span> and associated definitions. But many authors use <span class="nt">&lt;code&gt;</span>dl<span class="nt">&lt;/code&gt;</span> elements for fancy "layout" things. Usually the effect is not <span class="nt">&lt;em&gt;</span>too<span class="nt">&lt;/em&gt;</span> bad, if you design user style sheet rules for <span class="nt">&lt;code&gt;</span>dl<span class="nt">&lt;/code&gt;</span> which are suitable for real definition lists.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;dl&gt;</span>
+    <span class="nt">&lt;dt&gt;</span> recursion<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span> see recursion<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span> recursion, indirect<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span> see indirect recursion<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span> indirect recursion<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span> see recursion, indirect<span class="nt">&lt;/dd&gt;</span>
+    <span class="nt">&lt;dt&gt;</span> term<span class="nt">&lt;/dt&gt;</span>
+    <span class="nt">&lt;dd&gt;</span> a word or other expression taken into specific use in a well-defined meaning, which is often defined rather rigorously, even formally, and may differ quite a lot from an everyday meaning<span class="nt">&lt;/dd&gt;</span>
+  <span class="nt">&lt;/dl&gt;</span>
+<span class="nt">&lt;/article&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="04/text" class="styleguide">text</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <article>
+  <ul>
+    <li> <abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation; <code>abbr</code> markup used)</li>
+    <li> <acronym title="radio detecting and ranging">radar</acronym> (an acronym; <code>acronym</code> markup used)</li>
+    <li> <b>bolded</b> (<code>b</code> markup used - just bolding with unspecified semantics)</li>
+    <li> <cite>Origin of Species</cite> (a book title; <code>cite</code> markup used)</li>
+    <li> <code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)</li>
+    <li> here we have some <del>deleted</del> text (<code>del</code> markup used)</li>
+    <li> an <dfn>octet</dfn> is an entity consisting of eight bits (<code>dfn</code> markup used for the term being defined)</li>
+    <li> this is <em>very</em> simple (<code>em</code> markup used for emphasizing a word)</li>
+    <li> <i lang="la">Homo sapiens</i> (should appear in italics;  <code>i</code> markup used)</li>
+    <li> here we have some <ins>inserted</ins> text (<code>ins</code> markup used)</li>
+    <li> type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup used for text indicating keyboard input)</li>
+    <li> <q>Hello!</q> (<code>q</code> markup used for quotation)</li>
+    <li> He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)</li>
+    <li> you may get the message <samp>Core dumped</samp> at times (<code>samp</code> markup used for sample output)</li>
+    <li> <small>this is not that important</small> (<code>small</code> markup used)</li>
+    <li> <strike>overstruck</strike> (<code>strike</code> markup used; note: <code>s</code> is a nonstandard synonym for <code>strike</code>)</li>
+    <li> <strong>this is highlighted text</strong> (<code>strong</code> markup used)</li>
+    <li> In order to test how subscripts and superscripts (<code>sub</code> and <code>sup</code> markup) work inside running text, we need some dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O (where subscripts occur). So here is some fill so that you will (hopefully) see whether and how badly the subscripts and superscripts mess up vertical spacing between lines. Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>, and some nested superscripts (exponents) too: e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup> (where 2 and a+b+c should appear as exponents of exponents).</li>
+    <li> <tt>text in monospace font</tt> (<code>tt</code> markup used)</li>
+    <li> <u>underlined</u> text (<code>u</code> markup used)</li>
+    <li> the command <code>cat</code> <var>filename</var> displays the file specified by the <var>filename</var> (<code>var</code> markup used to indicate a word as a variable).</li>
+  </ul>
+
+  <p>Some of the elements tested above are typically displayed in a monospace font, often using the <em>same</em> presentation for all of them. This tests whether that is the case on your browser:</p>
+  <ul>
+    <li> <code>This is sample text inside code markup</code></li>
+    <li> <kbd>This is sample text inside kbd markup</kbd></li>
+    <li> <samp>This is sample text inside samp markup</samp></li>
+    <li> <tt>This is sample text inside tt markup</tt></li>
+  </ul>
+
+  <h2>Links</h2>
+  <ul>
+    <li> <a href="../index.html">main page</a></li>
+    <li> <a href="http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf" title="Writing Systems and Punctuation" type="application/pdf">Unicode Standard, chapter&nbsp;6</a></li>
+  </ul>
+
+  <p>This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links lists) are problematic from the <a href="http://www.useit.com">usability</a> perspective, but they may have use as &#8220;incidental&#8221;, less relevant links. See the document <cite><a href="links.html">Links Want To Be Links</a></cite>.</p>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;abbr</span> <span class="na">title=</span><span class="s">"Cascading Style Sheets"</span><span class="nt">&gt;</span>CSS<span class="nt">&lt;/abbr&gt;</span> (an abbreviation; <span class="nt">&lt;code&gt;</span>abbr<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;acronym</span> <span class="na">title=</span><span class="s">"radio detecting and ranging"</span><span class="nt">&gt;</span>radar<span class="nt">&lt;/acronym&gt;</span> (an acronym; <span class="nt">&lt;code&gt;</span>acronym<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;b&gt;</span>bolded<span class="nt">&lt;/b&gt;</span> (<span class="nt">&lt;code&gt;</span>b<span class="nt">&lt;/code&gt;</span> markup used - just bolding with unspecified semantics)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;cite&gt;</span>Origin of Species<span class="nt">&lt;/cite&gt;</span> (a book title; <span class="nt">&lt;code&gt;</span>cite<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;code&gt;</span>a[i] = b[i] + c[i);<span class="nt">&lt;/code&gt;</span> (computer code; <span class="nt">&lt;code&gt;</span>code<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> here we have some <span class="nt">&lt;del&gt;</span>deleted<span class="nt">&lt;/del&gt;</span> text (<span class="nt">&lt;code&gt;</span>del<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> an <span class="nt">&lt;dfn&gt;</span>octet<span class="nt">&lt;/dfn&gt;</span> is an entity consisting of eight bits (<span class="nt">&lt;code&gt;</span>dfn<span class="nt">&lt;/code&gt;</span> markup used for the term being defined)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> this is <span class="nt">&lt;em&gt;</span>very<span class="nt">&lt;/em&gt;</span> simple (<span class="nt">&lt;code&gt;</span>em<span class="nt">&lt;/code&gt;</span> markup used for emphasizing a word)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;i</span> <span class="na">lang=</span><span class="s">"la"</span><span class="nt">&gt;</span>Homo sapiens<span class="nt">&lt;/i&gt;</span> (should appear in italics;  <span class="nt">&lt;code&gt;</span>i<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> here we have some <span class="nt">&lt;ins&gt;</span>inserted<span class="nt">&lt;/ins&gt;</span> text (<span class="nt">&lt;code&gt;</span>ins<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> type <span class="nt">&lt;kbd&gt;</span>yes<span class="nt">&lt;/kbd&gt;</span> when prompted for an answer (<span class="nt">&lt;code&gt;</span>kbd<span class="nt">&lt;/code&gt;</span> markup used for text indicating keyboard input)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;q&gt;</span>Hello!<span class="nt">&lt;/q&gt;</span> (<span class="nt">&lt;code&gt;</span>q<span class="nt">&lt;/code&gt;</span> markup used for quotation)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> He said: <span class="nt">&lt;q&gt;</span>She said <span class="nt">&lt;q&gt;</span>Hello!<span class="nt">&lt;/q&gt;&lt;/q&gt;</span> (a quotation inside a quotation)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> you may get the message <span class="nt">&lt;samp&gt;</span>Core dumped<span class="nt">&lt;/samp&gt;</span> at times (<span class="nt">&lt;code&gt;</span>samp<span class="nt">&lt;/code&gt;</span> markup used for sample output)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;small&gt;</span>this is not that important<span class="nt">&lt;/small&gt;</span> (<span class="nt">&lt;code&gt;</span>small<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;strike&gt;</span>overstruck<span class="nt">&lt;/strike&gt;</span> (<span class="nt">&lt;code&gt;</span>strike<span class="nt">&lt;/code&gt;</span> markup used; note: <span class="nt">&lt;code&gt;</span>s<span class="nt">&lt;/code&gt;</span> is a nonstandard synonym for <span class="nt">&lt;code&gt;</span>strike<span class="nt">&lt;/code&gt;</span>)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;strong&gt;</span>this is highlighted text<span class="nt">&lt;/strong&gt;</span> (<span class="nt">&lt;code&gt;</span>strong<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> In order to test how subscripts and superscripts (<span class="nt">&lt;code&gt;</span>sub<span class="nt">&lt;/code&gt;</span> and <span class="nt">&lt;code&gt;</span>sup<span class="nt">&lt;/code&gt;</span> markup) work inside running text, we need some dummy text around constructs like x<span class="nt">&lt;sub&gt;</span>1<span class="nt">&lt;/sub&gt;</span> and H<span class="nt">&lt;sub&gt;</span>2<span class="nt">&lt;/sub&gt;</span>O (where subscripts occur). So here is some fill so that you will (hopefully) see whether and how badly the subscripts and superscripts mess up vertical spacing between lines. Now superscripts: M<span class="nt">&lt;sup&gt;</span>lle<span class="nt">&lt;/sup&gt;</span>, 1<span class="nt">&lt;sup&gt;</span>st<span class="nt">&lt;/sup&gt;</span>, and then some mathematical notations: e<span class="nt">&lt;sup&gt;</span>x<span class="nt">&lt;/sup&gt;</span>, sin<span class="nt">&lt;sup&gt;</span>2<span class="nt">&lt;/sup&gt;</span> <span class="nt">&lt;i&gt;</span>x<span class="nt">&lt;/i&gt;</span>, and some nested superscripts (exponents) too: e<span class="nt">&lt;sup&gt;</span>x<span class="nt">&lt;sup&gt;</span>2<span class="nt">&lt;/sup&gt;&lt;/sup&gt;</span> and f(x)<span class="nt">&lt;sup&gt;</span>g(x)<span class="nt">&lt;sup&gt;</span>a+b+c<span class="nt">&lt;/sup&gt;&lt;/sup&gt;</span> (where 2 and a+b+c should appear as exponents of exponents).<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;tt&gt;</span>text in monospace font<span class="nt">&lt;/tt&gt;</span> (<span class="nt">&lt;code&gt;</span>tt<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;u&gt;</span>underlined<span class="nt">&lt;/u&gt;</span> text (<span class="nt">&lt;code&gt;</span>u<span class="nt">&lt;/code&gt;</span> markup used)<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> the command <span class="nt">&lt;code&gt;</span>cat<span class="nt">&lt;/code&gt;</span> <span class="nt">&lt;var&gt;</span>filename<span class="nt">&lt;/var&gt;</span> displays the file specified by the <span class="nt">&lt;var&gt;</span>filename<span class="nt">&lt;/var&gt;</span> (<span class="nt">&lt;code&gt;</span>var<span class="nt">&lt;/code&gt;</span> markup used to indicate a word as a variable).<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>Some of the elements tested above are typically displayed in a monospace font, often using the <span class="nt">&lt;em&gt;</span>same<span class="nt">&lt;/em&gt;</span> presentation for all of them. This tests whether that is the case on your browser:<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;code&gt;</span>This is sample text inside code markup<span class="nt">&lt;/code&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;kbd&gt;</span>This is sample text inside kbd markup<span class="nt">&lt;/kbd&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;samp&gt;</span>This is sample text inside samp markup<span class="nt">&lt;/samp&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;tt&gt;</span>This is sample text inside tt markup<span class="nt">&lt;/tt&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+
+  <span class="nt">&lt;h2&gt;</span>Links<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"../index.html"</span><span class="nt">&gt;</span>main page<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf"</span> <span class="na">title=</span><span class="s">"Writing Systems and Punctuation"</span> <span class="na">type=</span><span class="s">"application/pdf"</span><span class="nt">&gt;</span>Unicode Standard, chapter<span class="ni">&amp;nbsp;</span>6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links lists) are problematic from the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.useit.com"</span><span class="nt">&gt;</span>usability<span class="nt">&lt;/a&gt;</span> perspective, but they may have use as <span class="ni">&amp;#8220;</span>incidental<span class="ni">&amp;#8221;</span>, less relevant links. See the document <span class="nt">&lt;cite&gt;&lt;a</span> <span class="na">href=</span><span class="s">"links.html"</span><span class="nt">&gt;</span>Links Want To Be Links<span class="nt">&lt;/a&gt;&lt;/cite&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="05/forms" class="styleguide">forms</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <article>
+  <form action="somewhere.cgi">
+    <div>
+      <input type="hidden" name="hidden field" value="42"/>
+      This is a form containing various fields (with some initial values (defaults) set, so that you can see how input text looks like without actually typing it):
+    </div>
+
+    <ul>
+      <li><label for="zname">Name</label><input type="text" class="classed" required="" placeholder=" Name" id="zname"></li>
+      <li><label for="zemail">Email</label><input type="email" class="classed" multiple="" placeholder="email addresses" required="" id="zemail"></li>
+      <li><label for="zdob">Birthday</label><input type="date" class="classed" required="" placeholder="01/01/84" id="zdob"></li>
+      <li><label for="zage">Age</label><input type="number" class="classed" required="" min="21" max="105" id="zage"></li>
+      <li><label for="zphone">Phone</label><input type="tel" class="classed" pattern="\d{3}-\d{3}-\d{4}" placeholder="XXX-XXX-XXXX" id="zphone"></li>
+      <li><label for="zrange">Satisfaction</label><input type="range" id="zrange" min="0" max="10" step="1" list="zrangelist">
+
+        <datalist id="zrangelist">
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </datalist>
+      </li>
+      <li>
+        <label for="ztweet">Twitter</label>
+        <input type="text" class="classed" pattern="@\w*" placeholder="@twitter" required="" id="ztweet">
+      </li>
+      <li>
+        <input type="submit" value="submit">
+      </li>
+    </ul>
+
+    <div>
+      <label for="but">Button:
+      <button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label>
+    </div>
+
+    <div>
+      <label for="f0">Reset button:
+        <input id="f0" type="reset" name="reset" value="Reset">
+      </label>
+    </div>
+
+    <div>
+      <label for="f1">Single-line text input field:
+        <input id="f1" name="text" size="20" value="Default text.">
+      </label>
+    </div>
+
+    <div>
+      <label for="f2">Multi-line text input field (textarea): </label><br>
+      <textarea id="f2" name="textarea" rows="2" cols="20">Default text.
+      </textarea>
+    </div>
+
+    <div>The following two radio buttons are inside a <code>fieldset</code> element with a <code>legend</code>:</div>
+
+    <fieldset>
+      <legend>Legend</legend>
+      <div><label for="f3"><input id="f3" type="radio" name="radio" value="1"> Radio button 1</label></div>
+      <div><label for="f4"><input id="f4" type="radio" name="radio" value="2" checked> Radio button 2 (initially checked)</label></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Check those that apply</legend>
+      <div><label for="f5"><input id="f5" type="checkbox" name="checkbox"> Checkbox 1</label></div>
+      <div><label for="f6"><input id="f6" type="checkbox" name="checkbox2" checked> Checkbox 2 (initially checked)</label></div>
+    </fieldset>
+
+    <div>
+      <label for="f10">A <code>select</code> element with <code>size="1"</code> (dropdown box):
+        <select id="f10" name="select1" size="1">
+          <option>one</option>
+          <option selected>two (default)</option>
+          <option>three</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <label for="f11">A <code>select</code> element with <code>size="3"</code> (listbox):</label><br>
+      <select id="f11" name="select2" size="3">
+        <option>one</option>
+        <option selected>two (default)</option>
+        <option>three</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="f99">Submit button:
+      <input id="f99" type="submit" name="submit" value="Just a test"></label>
+    </div>
+  </form>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"somewhere.cgi"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">name=</span><span class="s">"hidden field"</span> <span class="na">value=</span><span class="s">"42"</span><span class="nt">/&gt;</span>
+      This is a form containing various fields (with some initial values (defaults) set, so that you can see how input text looks like without actually typing it):
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;label</span> <span class="na">for=</span><span class="s">"zname"</span><span class="nt">&gt;</span>Name<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"classed"</span> <span class="na">required=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">" Name"</span> <span class="na">id=</span><span class="s">"zname"</span><span class="nt">&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;label</span> <span class="na">for=</span><span class="s">"zemail"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"classed"</span> <span class="na">multiple=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"email addresses"</span> <span class="na">required=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"zemail"</span><span class="nt">&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;label</span> <span class="na">for=</span><span class="s">"zdob"</span><span class="nt">&gt;</span>Birthday<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"date"</span> <span class="na">class=</span><span class="s">"classed"</span> <span class="na">required=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"01/01/84"</span> <span class="na">id=</span><span class="s">"zdob"</span><span class="nt">&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;label</span> <span class="na">for=</span><span class="s">"zage"</span><span class="nt">&gt;</span>Age<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"classed"</span> <span class="na">required=</span><span class="s">""</span> <span class="na">min=</span><span class="s">"21"</span> <span class="na">max=</span><span class="s">"105"</span> <span class="na">id=</span><span class="s">"zage"</span><span class="nt">&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;label</span> <span class="na">for=</span><span class="s">"zphone"</span><span class="nt">&gt;</span>Phone<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">class=</span><span class="s">"classed"</span> <span class="na">pattern=</span><span class="s">"\d{3}-\d{3}-\d{4}"</span> <span class="na">placeholder=</span><span class="s">"XXX-XXX-XXXX"</span> <span class="na">id=</span><span class="s">"zphone"</span><span class="nt">&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;&lt;label</span> <span class="na">for=</span><span class="s">"zrange"</span><span class="nt">&gt;</span>Satisfaction<span class="nt">&lt;/label&gt;&lt;input</span> <span class="na">type=</span><span class="s">"range"</span> <span class="na">id=</span><span class="s">"zrange"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"10"</span> <span class="na">step=</span><span class="s">"1"</span> <span class="na">list=</span><span class="s">"zrangelist"</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;datalist</span> <span class="na">id=</span><span class="s">"zrangelist"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"7"</span><span class="nt">&gt;</span>7<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"8"</span><span class="nt">&gt;</span>8<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"9"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"10"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/datalist&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"ztweet"</span><span class="nt">&gt;</span>Twitter<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"classed"</span> <span class="na">pattern=</span><span class="s">"@\w*"</span> <span class="na">placeholder=</span><span class="s">"@twitter"</span> <span class="na">required=</span><span class="s">""</span> <span class="na">id=</span><span class="s">"ztweet"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"but"</span><span class="nt">&gt;</span>Button:
+      <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"but"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"foo"</span> <span class="na">value=</span><span class="s">"bar"</span><span class="nt">&gt;</span>A cool<span class="nt">&lt;br&gt;</span>button<span class="nt">&lt;/button&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"f0"</span><span class="nt">&gt;</span>Reset button:
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"f0"</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">name=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"f1"</span><span class="nt">&gt;</span>Single-line text input field:
+        <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"f1"</span> <span class="na">name=</span><span class="s">"text"</span> <span class="na">size=</span><span class="s">"20"</span> <span class="na">value=</span><span class="s">"Default text."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"f2"</span><span class="nt">&gt;</span>Multi-line text input field (textarea): <span class="nt">&lt;/label&gt;&lt;br&gt;</span>
+      <span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"f2"</span> <span class="na">name=</span><span class="s">"textarea"</span> <span class="na">rows=</span><span class="s">"2"</span> <span class="na">cols=</span><span class="s">"20"</span><span class="nt">&gt;</span>Default text.
+      <span class="nt">&lt;/textarea&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>The following two radio buttons are inside a <span class="nt">&lt;code&gt;</span>fieldset<span class="nt">&lt;/code&gt;</span> element with a <span class="nt">&lt;code&gt;</span>legend<span class="nt">&lt;/code&gt;</span>:<span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;fieldset&gt;</span>
+      <span class="nt">&lt;legend&gt;</span>Legend<span class="nt">&lt;/legend&gt;</span>
+      <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">for=</span><span class="s">"f3"</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">"f3"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span> Radio button 1<span class="nt">&lt;/label&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">for=</span><span class="s">"f4"</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">"f4"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span> <span class="na">value=</span><span class="s">"2"</span> <span class="na">checked</span><span class="nt">&gt;</span> Radio button 2 (initially checked)<span class="nt">&lt;/label&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+
+    <span class="nt">&lt;fieldset&gt;</span>
+      <span class="nt">&lt;legend&gt;</span>Check those that apply<span class="nt">&lt;/legend&gt;</span>
+      <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">for=</span><span class="s">"f5"</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">"f5"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Checkbox 1<span class="nt">&lt;/label&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;div&gt;&lt;label</span> <span class="na">for=</span><span class="s">"f6"</span><span class="nt">&gt;&lt;input</span> <span class="na">id=</span><span class="s">"f6"</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">name=</span><span class="s">"checkbox2"</span> <span class="na">checked</span><span class="nt">&gt;</span> Checkbox 2 (initially checked)<span class="nt">&lt;/label&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"f10"</span><span class="nt">&gt;</span>A <span class="nt">&lt;code&gt;</span>select<span class="nt">&lt;/code&gt;</span> element with <span class="nt">&lt;code&gt;</span>size="1"<span class="nt">&lt;/code&gt;</span> (dropdown box):
+        <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"f10"</span> <span class="na">name=</span><span class="s">"select1"</span> <span class="na">size=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;option&gt;</span>one<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>two (default)<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option&gt;</span>three<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"f11"</span><span class="nt">&gt;</span>A <span class="nt">&lt;code&gt;</span>select<span class="nt">&lt;/code&gt;</span> element with <span class="nt">&lt;code&gt;</span>size="3"<span class="nt">&lt;/code&gt;</span> (listbox):<span class="nt">&lt;/label&gt;&lt;br&gt;</span>
+      <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"f11"</span> <span class="na">name=</span><span class="s">"select2"</span> <span class="na">size=</span><span class="s">"3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option&gt;</span>one<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">selected</span><span class="nt">&gt;</span>two (default)<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option&gt;</span>three<span class="nt">&lt;/option&gt;</span>
+      <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+
+    <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"f99"</span><span class="nt">&gt;</span>Submit button:
+      <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"f99"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Just a test"</span><span class="nt">&gt;&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/article&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="06/tables" class="styleguide">tables</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    <article>
+  <p>The following table has a caption. The first row is in a thead, the second row is the tfoot, and the rest is in a tbody. The first column contain table header cells (<code>th</code> elements) only; other cells are data cells (<code>td</code> elements):</p>
+
+  <table summary= "Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+    <caption>Sample table: Areas of the Nordic countries, in sq km</caption>
+    <thead><tr><th scope="col">Country</th> <th scope="col">Total area</th> <th scope="col">Land area</th></tr></thead>
+    <tfoot><tr><th scope="col">Country</th> <th scope="col">Total area</th> <th scope="col">Land area</th></tr></tfoot>
+    <tbody>
+      <tr><th scope="row">Denmark</th> <td> 43,070 </td><td> 42,370</td></tr>
+      <tr><th scope="row">Finland</th> <td>337,030 </td><td>305,470</td></tr>
+      <tr><th scope="row">Iceland</th> <td>103,000 </td><td>100,250</td></tr>
+      <tr><th scope="row">Norway</th>  <td>324,220 </td><td>307,860</td></tr>
+      <tr><th scope="row">Sweden</th>  <td>449,964 </td><td>410,928</td></tr>
+    </tbody>
+  </table>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;p&gt;</span>The following table has a caption. The first row is in a thead, the second row is the tfoot, and the rest is in a tbody. The first column contain table header cells (<span class="nt">&lt;code&gt;</span>th<span class="nt">&lt;/code&gt;</span> elements) only; other cells are data cells (<span class="nt">&lt;code&gt;</span>td<span class="nt">&lt;/code&gt;</span> elements):<span class="nt">&lt;/p&gt;</span>
+
+  <span class="nt">&lt;table</span> <span class="na">summary=</span><span class="err"> </span><span class="s">"Each row names a Nordic country and specifies its total area and land area, in square kilometers"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;caption&gt;</span>Sample table: Areas of the Nordic countries, in sq km<span class="nt">&lt;/caption&gt;</span>
+    <span class="nt">&lt;thead&gt;&lt;tr&gt;&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Country<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Total area<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Land area<span class="nt">&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</span>
+    <span class="nt">&lt;tfoot&gt;&lt;tr&gt;&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Country<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Total area<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th</span> <span class="na">scope=</span><span class="s">"col"</span><span class="nt">&gt;</span>Land area<span class="nt">&lt;/th&gt;&lt;/tr&gt;&lt;/tfoot&gt;</span>
+    <span class="nt">&lt;tbody&gt;</span>
+      <span class="nt">&lt;tr&gt;&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Denmark<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;td&gt;</span> 43,070 <span class="nt">&lt;/td&gt;&lt;td&gt;</span> 42,370<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Finland<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;td&gt;</span>337,030 <span class="nt">&lt;/td&gt;&lt;td&gt;</span>305,470<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Iceland<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;td&gt;</span>103,000 <span class="nt">&lt;/td&gt;&lt;td&gt;</span>100,250<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Norway<span class="nt">&lt;/th&gt;</span>  <span class="nt">&lt;td&gt;</span>324,220 <span class="nt">&lt;/td&gt;&lt;td&gt;</span>307,860<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+      <span class="nt">&lt;tr&gt;&lt;th</span> <span class="na">scope=</span><span class="s">"row"</span><span class="nt">&gt;</span>Sweden<span class="nt">&lt;/th&gt;</span>  <span class="nt">&lt;td&gt;</span>449,964 <span class="nt">&lt;/td&gt;&lt;td&gt;</span>410,928<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+    <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;/table&gt;</span>
+<span class="nt">&lt;/article&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="07/html5-elements" class="styleguide">html5 elements</h1>
+<div class="codeExample">
+  <div class="exampleOutput">
+    
+<header>
+  <h1>Testing display of HTML elements</h1>
+  <p>This is the document <code>header</code></p>
+</header>
+
+<article>
+  <h2>HTML5 Elements</h2>
+
+  <h3>Details and Summary</h3>
+  <details>
+    <summary>This is the summary of the details</summary>
+    <p>This is a paragraph within a <code>details</code> element, outside of the <code>summary</code></p>
+  </details>
+
+  <h3>Figure and Figcaption</h3>
+  <figure>
+    <img src="none.jpg" alt="img with invalid src">
+    <figcaption>This is the figcaption
+    </figcaption>
+  </figure>
+
+  <dialog>This is a dialog</dialog>
+
+  <p>This paragraph has a <mark>mark</mark></p>
+
+  <h3>Meter</h3>
+  <ul>
+    <li><meter>Meter</meter></li>
+    <li><meter value=1 min=0 max=4 low=2 high=3>1 of 4</meter></li>
+    <li><meter value=2 min=0 max=4 low=1 high=3>2 of 4</meter></li>
+    <li><meter value=61 min=0 max=100 low=73 high=87 optimum=100>61</meter></li>
+  </ul>
+
+  <h3>Progress</h3>
+  <ul>
+    <li><progress>Empty</progress></li>
+    <li><progress min="0" max="100" value="17">17% complete</progress></li>
+    <li><progress value="75" max="100">75% complete</progress></li>
+  </ul>
+
+  <aside>
+    <h1>This is an aside</h1>
+    <h2>Character test</h2>
+    <p>The following table has some sample characters with annotations. If the browser&#8217;s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.</p>
+
+    <table>
+      <thead><tr><th>Char.</th> <th>Explanation </th> <th>Notes</th></tr></thead>
+      <tbody><tr><td>ê </td><td>e with circumflex </td><td>Latin 1 character, should be ok</td></tr>
+        <tr><td>&#8212;</td> <td>em dash </td><td>Windows Latin 1 character, should be ok, too</td></tr>
+        <tr><td>&#x100;</td> <td>A with macron (line above) </td><td>Latin Extended-A character, not present in all fonts</td></tr>
+        <tr><td>&Omega;</td> <td>capital omega </td><td>A Greek letter</td></tr>
+        <tr><td>&#x2212;</td> <td>minus sign </td><td>Unicode minus</td></tr>
+        <tr><td>&#x2300;</td> <td>diameter sign </td><td>relatively rare in fonts</td></tr>
+      </tbody>
+    </table>
+  </aside>
+
+  <footer>
+    <hr title="Information about this document"/>
+    <p>This <code>footer</code> starts with an <code>hr</code>, followed by two <code>p</code>s.</p>
+    <p>Last update: <time>2015-08-12</time>.</p>
+  </footer>
+</article>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;header&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Testing display of HTML elements<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>This is the document <span class="nt">&lt;code&gt;</span>header<span class="nt">&lt;/code&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/header&gt;</span>
+
+<span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>HTML5 Elements<span class="nt">&lt;/h2&gt;</span>
+
+  <span class="nt">&lt;h3&gt;</span>Details and Summary<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;details&gt;</span>
+    <span class="nt">&lt;summary&gt;</span>This is the summary of the details<span class="nt">&lt;/summary&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This is a paragraph within a <span class="nt">&lt;code&gt;</span>details<span class="nt">&lt;/code&gt;</span> element, outside of the <span class="nt">&lt;code&gt;</span>summary<span class="nt">&lt;/code&gt;&lt;/p&gt;</span>
+  <span class="nt">&lt;/details&gt;</span>
+
+  <span class="nt">&lt;h3&gt;</span>Figure and Figcaption<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"none.jpg"</span> <span class="na">alt=</span><span class="s">"img with invalid src"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>This is the figcaption
+    <span class="nt">&lt;/figcaption&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+
+  <span class="nt">&lt;dialog&gt;</span>This is a dialog<span class="nt">&lt;/dialog&gt;</span>
+
+  <span class="nt">&lt;p&gt;</span>This paragraph has a <span class="nt">&lt;mark&gt;</span>mark<span class="nt">&lt;/mark&gt;&lt;/p&gt;</span>
+
+  <span class="nt">&lt;h3&gt;</span>Meter<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;meter&gt;</span>Meter<span class="nt">&lt;/meter&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;meter</span> <span class="na">value=</span><span class="s">1</span> <span class="na">min=</span><span class="s">0</span> <span class="na">max=</span><span class="s">4</span> <span class="na">low=</span><span class="s">2</span> <span class="na">high=</span><span class="s">3</span><span class="nt">&gt;</span>1 of 4<span class="nt">&lt;/meter&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;meter</span> <span class="na">value=</span><span class="s">2</span> <span class="na">min=</span><span class="s">0</span> <span class="na">max=</span><span class="s">4</span> <span class="na">low=</span><span class="s">1</span> <span class="na">high=</span><span class="s">3</span><span class="nt">&gt;</span>2 of 4<span class="nt">&lt;/meter&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;meter</span> <span class="na">value=</span><span class="s">61</span> <span class="na">min=</span><span class="s">0</span> <span class="na">max=</span><span class="s">100</span> <span class="na">low=</span><span class="s">73</span> <span class="na">high=</span><span class="s">87</span> <span class="na">optimum=</span><span class="s">100</span><span class="nt">&gt;</span>61<span class="nt">&lt;/meter&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+
+  <span class="nt">&lt;h3&gt;</span>Progress<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;progress&gt;</span>Empty<span class="nt">&lt;/progress&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;progress</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">value=</span><span class="s">"17"</span><span class="nt">&gt;</span>17% complete<span class="nt">&lt;/progress&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;progress</span> <span class="na">value=</span><span class="s">"75"</span> <span class="na">max=</span><span class="s">"100"</span><span class="nt">&gt;</span>75% complete<span class="nt">&lt;/progress&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+
+  <span class="nt">&lt;aside&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>This is an aside<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Character test<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>The following table has some sample characters with annotations. If the browser<span class="ni">&amp;#8217;</span>s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;table&gt;</span>
+      <span class="nt">&lt;thead&gt;&lt;tr&gt;&lt;th&gt;</span>Char.<span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Explanation <span class="nt">&lt;/th&gt;</span> <span class="nt">&lt;th&gt;</span>Notes<span class="nt">&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;</span>
+      <span class="nt">&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;</span>ê <span class="nt">&lt;/td&gt;&lt;td&gt;</span>e with circumflex <span class="nt">&lt;/td&gt;&lt;td&gt;</span>Latin 1 character, should be ok<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;&lt;td&gt;</span><span class="ni">&amp;#8212;</span><span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>em dash <span class="nt">&lt;/td&gt;&lt;td&gt;</span>Windows Latin 1 character, should be ok, too<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;&lt;td&gt;</span><span class="ni">&amp;#x100;</span><span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>A with macron (line above) <span class="nt">&lt;/td&gt;&lt;td&gt;</span>Latin Extended-A character, not present in all fonts<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;&lt;td&gt;</span><span class="ni">&amp;Omega;</span><span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>capital omega <span class="nt">&lt;/td&gt;&lt;td&gt;</span>A Greek letter<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;&lt;td&gt;</span><span class="ni">&amp;#x2212;</span><span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>minus sign <span class="nt">&lt;/td&gt;&lt;td&gt;</span>Unicode minus<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+        <span class="nt">&lt;tr&gt;&lt;td&gt;</span><span class="ni">&amp;#x2300;</span><span class="nt">&lt;/td&gt;</span> <span class="nt">&lt;td&gt;</span>diameter sign <span class="nt">&lt;/td&gt;&lt;td&gt;</span>relatively rare in fonts<span class="nt">&lt;/td&gt;&lt;/tr&gt;</span>
+      <span class="nt">&lt;/tbody&gt;</span>
+    <span class="nt">&lt;/table&gt;</span>
+  <span class="nt">&lt;/aside&gt;</span>
+
+  <span class="nt">&lt;footer&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="na">title=</span><span class="s">"Information about this document"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;p&gt;</span>This <span class="nt">&lt;code&gt;</span>footer<span class="nt">&lt;/code&gt;</span> starts with an <span class="nt">&lt;code&gt;</span>hr<span class="nt">&lt;/code&gt;</span>, followed by two <span class="nt">&lt;code&gt;</span>p<span class="nt">&lt;/code&gt;</span>s.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Last update: <span class="nt">&lt;time&gt;</span>2015-08-12<span class="nt">&lt;/time&gt;</span>.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/article&gt;</span></pre>
+    </div>
+  </div>
+</div>
+  </section>
+</div>

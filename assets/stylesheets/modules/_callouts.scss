@@ -1,0 +1,65 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - callouts module
+// styles for the callouts module
+
+.callout {
+  background: color('patina');
+  color: color('white');
+  text-align: center;
+  padding: 50px 0;
+}
+
+.callout__heading {
+  color: color('white');
+}
+
+.callout__sub-heading {
+  font-size: font-size('large');
+}
+
+.callout__excerpt {
+  font-size: font-size('medium');
+}
+
+.callout__link {
+  @include link-color(color('midnight-blue'));
+  font-family: sans('regular');
+}
+
+.callout__button {
+  @include link-color(color('white'));
+  position: relative;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  border-bottom: 0px solid;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  background: color('hopbush');
+  display: inline-block;
+  font-size: font-size('large');
+  margin-top: 30px;
+  padding: 10px 20px;
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  vertical-align: middle;
+  @include attention() {
+    border-bottom: none;
+    transform: translateY(-10px);
+    &:before {
+      transform: translateY(10px);
+    }
+  }
+
+  &:before {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 10px);
+    border-color: color('hopbush') transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    content: '';
+    transition-duration: 0.3s;
+    transition-property: transform;
+    z-index: -1;
+  }
+}

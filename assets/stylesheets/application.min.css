@@ -1,0 +1,1179 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+.u-tac {
+  text-align: center; }
+
+@font-face {
+  font-family: 'SourceSansPro-Black';
+  src: url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.woff') format('woff'), url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.svg#SourceSansPro-Black') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-BlackItalic';
+  src: url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.svg#SourceSansPro-BlackItalic') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.woff') format('woff'), url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-BoldItalic';
+  src: url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.svg#SourceSansPro-BoldItalic') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-ExtraLight';
+  src: url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.woff') format('woff'), url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-ExtraLightItalic';
+  src: url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.svg#SourceSansPro-ExtraLightItalic') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-Italic';
+  src: url('../fonts/sans/SourceSansPro-Italic/SourceSansPro-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Italic/SourceSansPro-Italic.woff') format('woff'), url('../fonts/sans/SourceSansPro-Italic/SourceSansPro-Italic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Italic/SourceSansPro-Italic.svg#SourceSansPro-Italic') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-Light';
+  src: url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.woff') format('woff'), url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-LightItalic';
+  src: url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.svg#SourceSansPro-LightItalic') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.woff') format('woff'), url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-Semibold';
+  src: url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.woff') format('woff'), url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSansPro-SemiboldItalic';
+  src: url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.svg#SourceSansPro-SemiboldItalic') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSerifPro-Bold';
+  src: url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.woff') format('woff'), url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.ttf') format('truetype'), url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.svg#SourceSerifPro-Bold') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSerifPro-Regular';
+  src: url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.woff') format('woff'), url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.ttf') format('truetype'), url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.svg#SourceSerifPro-Regular') format('svg'); }
+
+@font-face {
+  font-family: 'SourceSerifPro-Semibold';
+  src: url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.woff') format('woff'), url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.ttf') format('truetype'), url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.svg#SourceSerifPro-Semibold') format('svg'); }
+
+@font-face {
+  font-family: 'SourceCodePro-Black';
+  src: url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.woff') format('woff'), url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.svg#SourceCodePro-Black') format('svg'); }
+
+@font-face {
+  font-family: 'SourceCodePro-Bold';
+  src: url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.woff') format('woff'), url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.svg#SourceCodePro-Bold') format('svg'); }
+
+@font-face {
+  font-family: 'SourceCodePro-ExtraLight';
+  src: url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.woff') format('woff'), url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.svg#SourceCodePro-ExtraLight') format('svg'); }
+
+@font-face {
+  font-family: 'SourceCodePro-Light';
+  src: url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.woff') format('woff'), url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.svg#SourceCodePro-Light') format('svg'); }
+
+@font-face {
+  font-family: 'SourceCodePro-Medium';
+  src: url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.woff') format('woff'), url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.svg#SourceCodePro-Medium') format('svg'); }
+
+@font-face {
+  font-family: 'SourceCodePro-Regular';
+  src: url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.woff') format('woff'), url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.svg#SourceCodePro-Regular') format('svg'); }
+
+@font-face {
+  font-family: 'SourceCodePro-Semibold';
+  src: url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.woff') format('woff'), url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.svg#SourceCodePro-Semibold') format('svg'); }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  color: #484c55;
+  font-family: 'SourceSansPro-Light', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: inherit; }
+
+h1 {
+  color: #c69;
+  font-size: 48px; }
+
+h2 {
+  font-size: 32px; }
+
+h3 {
+  font-size: 20px; }
+
+p + p {
+  margin: 10px 0; }
+
+a {
+  text-decoration: none;
+  color: #c69; }
+  a:visited {
+    color: #c69; }
+  a:hover, a:active, a:focus {
+    border-bottom: 1px solid; }
+
+strong {
+  font-family: 'SourceSansPro-Bold', sans-serif; }
+
+em {
+  font-family: 'SourceSansPro-Italic', sans-serif; }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+hr {
+  background: #699;
+  height: 3px; }
+
+/*doc
+---
+title: headings
+name: 01/headings
+category: base
+---
+
+```html_example
+<article aria-label="headings">
+  <h1>This is 1st level heading</h1>
+  <p>This is a test paragraph.</p>
+  <h2>This is 2nd level heading</h2>
+  <p>This is a test paragraph.</p>
+  <h3>This is 3rd level heading</h3>
+  <p>This is a test paragraph.</p>
+  <h4>This is 4th level heading</h4>
+  <p>This is a test paragraph.</p>
+  <h5>This is 5th level heading</h5>
+  <p>This is a test paragraph.</p>
+  <h6>This is 6th level heading</h6>
+  <p>This is a test paragraph.</p>
+</article>
+```
+*/
+/*doc
+---
+title: block level elements
+name: 02/block-level-elements
+category: base
+---
+
+```html_example
+<article>
+  <p>This is a normal paragraph (<code>p</code> element). To add some length to it, let us mention that this page was primarily written for testing the effect of <strong>user style sheets</strong>. You can use it for various other purposes as well, like just checking how your browser displays various HTML elements by default. It can also be useful when testing conversions from HTML format to other formats, since some elements can go wrong then.</p>
+
+  <p>This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.</p>
+
+  <div>This is a <code>div</code> element. Authors may use such elements instead of paragraph markup for various reasons. (End of <code>div</code>.)</div>
+
+  <blockquote>
+    <p>This is a block quotation containing a single paragraph. Well, not quite, since this is not <em>really</em> quoted text, but I hope you understand the point. After all, this page does not use HTML markup very normally anyway.</p>
+  </blockquote>
+
+  <p>The following contains address information about the author, in an <code>address</code> element.</p>
+
+  <address>
+    <a href="../somelink.html" lang="fr" hreflang="en">Mon nom en francais</a>,
+    <a href="mailto:example@example.com">example@example.com</a><br>
+    3 Rue Jules Ferry, Neuilly Sur Seine, France 94000
+  </address>
+</article>
+```
+*/
+/*doc
+---
+title: lists
+name: 03/lists
+category: base
+---
+
+```html_example
+<article>
+  <p>This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".</p>
+  <ul>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer. Note that for short items lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li>
+    <li> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li>
+  </ul>
+
+  <p>The following is a <code>menu</code> list:</p>
+  <menu>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.</li>
+  </menu>
+
+  <p>The following is a <code>dir</code> list:</p>
+  <dir>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.</li>
+  </dir>
+
+  <p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".</p>
+  <ol>
+    <li> One.</li>
+    <li> Two.</li>
+    <li> Three. Well, probably this list item should be longer. Note that if items are short, lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li>
+    <li> Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li>
+  </ol>
+
+  <p>This is a paragraph before a <strong>definition</strong> list (<code>dl</code>). In principle, such a list should consist of <em>terms</em> and associated definitions. But many authors use <code>dl</code> elements for fancy "layout" things. Usually the effect is not <em>too</em> bad, if you design user style sheet rules for <code>dl</code> which are suitable for real definition lists.</p>
+  <dl>
+    <dt> recursion</dt>
+    <dd> see recursion</dd>
+    <dt> recursion, indirect</dt>
+    <dd> see indirect recursion</dd>
+    <dt> indirect recursion</dt>
+    <dd> see recursion, indirect</dd>
+    <dt> term</dt>
+    <dd> a word or other expression taken into specific use in a well-defined meaning, which is often defined rather rigorously, even formally, and may differ quite a lot from an everyday meaning</dd>
+  </dl>
+</article>
+```
+*/
+/*doc
+---
+title: text
+name: 04/text
+category: base
+---
+
+```html_example
+<article>
+  <ul>
+    <li> <abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation; <code>abbr</code> markup used)</li>
+    <li> <acronym title="radio detecting and ranging">radar</acronym> (an acronym; <code>acronym</code> markup used)</li>
+    <li> <b>bolded</b> (<code>b</code> markup used - just bolding with unspecified semantics)</li>
+    <li> <cite>Origin of Species</cite> (a book title; <code>cite</code> markup used)</li>
+    <li> <code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)</li>
+    <li> here we have some <del>deleted</del> text (<code>del</code> markup used)</li>
+    <li> an <dfn>octet</dfn> is an entity consisting of eight bits (<code>dfn</code> markup used for the term being defined)</li>
+    <li> this is <em>very</em> simple (<code>em</code> markup used for emphasizing a word)</li>
+    <li> <i lang="la">Homo sapiens</i> (should appear in italics;  <code>i</code> markup used)</li>
+    <li> here we have some <ins>inserted</ins> text (<code>ins</code> markup used)</li>
+    <li> type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup used for text indicating keyboard input)</li>
+    <li> <q>Hello!</q> (<code>q</code> markup used for quotation)</li>
+    <li> He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)</li>
+    <li> you may get the message <samp>Core dumped</samp> at times (<code>samp</code> markup used for sample output)</li>
+    <li> <small>this is not that important</small> (<code>small</code> markup used)</li>
+    <li> <strike>overstruck</strike> (<code>strike</code> markup used; note: <code>s</code> is a nonstandard synonym for <code>strike</code>)</li>
+    <li> <strong>this is highlighted text</strong> (<code>strong</code> markup used)</li>
+    <li> In order to test how subscripts and superscripts (<code>sub</code> and <code>sup</code> markup) work inside running text, we need some dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O (where subscripts occur). So here is some fill so that you will (hopefully) see whether and how badly the subscripts and superscripts mess up vertical spacing between lines. Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>, and some nested superscripts (exponents) too: e<sup>x<sup>2</sup></sup> and f(x)<sup>g(x)<sup>a+b+c</sup></sup> (where 2 and a+b+c should appear as exponents of exponents).</li>
+    <li> <tt>text in monospace font</tt> (<code>tt</code> markup used)</li>
+    <li> <u>underlined</u> text (<code>u</code> markup used)</li>
+    <li> the command <code>cat</code> <var>filename</var> displays the file specified by the <var>filename</var> (<code>var</code> markup used to indicate a word as a variable).</li>
+  </ul>
+
+  <p>Some of the elements tested above are typically displayed in a monospace font, often using the <em>same</em> presentation for all of them. This tests whether that is the case on your browser:</p>
+  <ul>
+    <li> <code>This is sample text inside code markup</code></li>
+    <li> <kbd>This is sample text inside kbd markup</kbd></li>
+    <li> <samp>This is sample text inside samp markup</samp></li>
+    <li> <tt>This is sample text inside tt markup</tt></li>
+  </ul>
+
+  <h2>Links</h2>
+  <ul>
+    <li> <a href="../index.html">main page</a></li>
+    <li> <a href="http://www.unicode.org/versions/Unicode4.0.0/ch06.pdf" title="Writing Systems and Punctuation" type="application/pdf">Unicode Standard, chapter&nbsp;6</a></li>
+  </ul>
+
+  <p>This is a text paragraph that contains some inline links. Generally, inline links (as opposite to e.g. links lists) are problematic from the <a href="http://www.useit.com">usability</a> perspective, but they may have use as &#8220;incidental&#8221;, less relevant links. See the document <cite><a href="links.html">Links Want To Be Links</a></cite>.</p>
+</article>
+```
+*/
+/*doc
+---
+title: forms
+name: 05/forms
+category: base
+---
+
+```html_example
+<article>
+  <form action="somewhere.cgi">
+    <div>
+      <input type="hidden" name="hidden field" value="42"/>
+      This is a form containing various fields (with some initial values (defaults) set, so that you can see how input text looks like without actually typing it):
+    </div>
+
+    <ul>
+      <li><label for="zname">Name</label><input type="text" class="classed" required="" placeholder=" Name" id="zname"></li>
+      <li><label for="zemail">Email</label><input type="email" class="classed" multiple="" placeholder="email addresses" required="" id="zemail"></li>
+      <li><label for="zdob">Birthday</label><input type="date" class="classed" required="" placeholder="01/01/84" id="zdob"></li>
+      <li><label for="zage">Age</label><input type="number" class="classed" required="" min="21" max="105" id="zage"></li>
+      <li><label for="zphone">Phone</label><input type="tel" class="classed" pattern="\d{3}-\d{3}-\d{4}" placeholder="XXX-XXX-XXXX" id="zphone"></li>
+      <li><label for="zrange">Satisfaction</label><input type="range" id="zrange" min="0" max="10" step="1" list="zrangelist">
+
+        <datalist id="zrangelist">
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </datalist>
+      </li>
+      <li>
+        <label for="ztweet">Twitter</label>
+        <input type="text" class="classed" pattern="@\w*" placeholder="@twitter" required="" id="ztweet">
+      </li>
+      <li>
+        <input type="submit" value="submit">
+      </li>
+    </ul>
+
+    <div>
+      <label for="but">Button:
+      <button id="but" type="submit" name="foo" value="bar">A cool<br>button</button></label>
+    </div>
+
+    <div>
+      <label for="f0">Reset button:
+        <input id="f0" type="reset" name="reset" value="Reset">
+      </label>
+    </div>
+
+    <div>
+      <label for="f1">Single-line text input field:
+        <input id="f1" name="text" size="20" value="Default text.">
+      </label>
+    </div>
+
+    <div>
+      <label for="f2">Multi-line text input field (textarea): </label><br>
+      <textarea id="f2" name="textarea" rows="2" cols="20">Default text.
+      </textarea>
+    </div>
+
+    <div>The following two radio buttons are inside a <code>fieldset</code> element with a <code>legend</code>:</div>
+
+    <fieldset>
+      <legend>Legend</legend>
+      <div><label for="f3"><input id="f3" type="radio" name="radio" value="1"> Radio button 1</label></div>
+      <div><label for="f4"><input id="f4" type="radio" name="radio" value="2" checked> Radio button 2 (initially checked)</label></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Check those that apply</legend>
+      <div><label for="f5"><input id="f5" type="checkbox" name="checkbox"> Checkbox 1</label></div>
+      <div><label for="f6"><input id="f6" type="checkbox" name="checkbox2" checked> Checkbox 2 (initially checked)</label></div>
+    </fieldset>
+
+    <div>
+      <label for="f10">A <code>select</code> element with <code>size="1"</code> (dropdown box):
+        <select id="f10" name="select1" size="1">
+          <option>one</option>
+          <option selected>two (default)</option>
+          <option>three</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <label for="f11">A <code>select</code> element with <code>size="3"</code> (listbox):</label><br>
+      <select id="f11" name="select2" size="3">
+        <option>one</option>
+        <option selected>two (default)</option>
+        <option>three</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="f99">Submit button:
+      <input id="f99" type="submit" name="submit" value="Just a test"></label>
+    </div>
+  </form>
+</article>
+```
+*/
+/*doc
+---
+title: tables
+name: 06/tables
+category: base
+---
+
+```html_example
+<article>
+  <p>The following table has a caption. The first row is in a thead, the second row is the tfoot, and the rest is in a tbody. The first column contain table header cells (<code>th</code> elements) only; other cells are data cells (<code>td</code> elements):</p>
+
+  <table summary= "Each row names a Nordic country and specifies its total area and land area, in square kilometers">
+    <caption>Sample table: Areas of the Nordic countries, in sq km</caption>
+    <thead><tr><th scope="col">Country</th> <th scope="col">Total area</th> <th scope="col">Land area</th></tr></thead>
+    <tfoot><tr><th scope="col">Country</th> <th scope="col">Total area</th> <th scope="col">Land area</th></tr></tfoot>
+    <tbody>
+      <tr><th scope="row">Denmark</th> <td> 43,070 </td><td> 42,370</td></tr>
+      <tr><th scope="row">Finland</th> <td>337,030 </td><td>305,470</td></tr>
+      <tr><th scope="row">Iceland</th> <td>103,000 </td><td>100,250</td></tr>
+      <tr><th scope="row">Norway</th>  <td>324,220 </td><td>307,860</td></tr>
+      <tr><th scope="row">Sweden</th>  <td>449,964 </td><td>410,928</td></tr>
+    </tbody>
+  </table>
+</article>
+```
+*/
+/*doc
+---
+title: html5 elements
+name: 07/html5-elements
+category: base
+---
+
+```html_example
+
+<header>
+  <h1>Testing display of HTML elements</h1>
+  <p>This is the document <code>header</code></p>
+</header>
+
+<article>
+  <h2>HTML5 Elements</h2>
+
+  <h3>Details and Summary</h3>
+  <details>
+    <summary>This is the summary of the details</summary>
+    <p>This is a paragraph within a <code>details</code> element, outside of the <code>summary</code></p>
+  </details>
+
+  <h3>Figure and Figcaption</h3>
+  <figure>
+    <img src="none.jpg" alt="img with invalid src">
+    <figcaption>This is the figcaption
+    </figcaption>
+  </figure>
+
+  <dialog>This is a dialog</dialog>
+
+  <p>This paragraph has a <mark>mark</mark></p>
+
+  <h3>Meter</h3>
+  <ul>
+    <li><meter>Meter</meter></li>
+    <li><meter value=1 min=0 max=4 low=2 high=3>1 of 4</meter></li>
+    <li><meter value=2 min=0 max=4 low=1 high=3>2 of 4</meter></li>
+    <li><meter value=61 min=0 max=100 low=73 high=87 optimum=100>61</meter></li>
+  </ul>
+
+  <h3>Progress</h3>
+  <ul>
+    <li><progress>Empty</progress></li>
+    <li><progress min="0" max="100" value="17">17% complete</progress></li>
+    <li><progress value="75" max="100">75% complete</progress></li>
+  </ul>
+
+  <aside>
+    <h1>This is an aside</h1>
+    <h2>Character test</h2>
+    <p>The following table has some sample characters with annotations. If the browser&#8217;s default font does not contain all of them, they may get displayed using backup fonts. This may cause stylistic differences, but it should not prevent the characters from being displayed at all.</p>
+
+    <table>
+      <thead><tr><th>Char.</th> <th>Explanation </th> <th>Notes</th></tr></thead>
+      <tbody><tr><td>ê </td><td>e with circumflex </td><td>Latin 1 character, should be ok</td></tr>
+        <tr><td>&#8212;</td> <td>em dash </td><td>Windows Latin 1 character, should be ok, too</td></tr>
+        <tr><td>&#x100;</td> <td>A with macron (line above) </td><td>Latin Extended-A character, not present in all fonts</td></tr>
+        <tr><td>&Omega;</td> <td>capital omega </td><td>A Greek letter</td></tr>
+        <tr><td>&#x2212;</td> <td>minus sign </td><td>Unicode minus</td></tr>
+        <tr><td>&#x2300;</td> <td>diameter sign </td><td>relatively rare in fonts</td></tr>
+      </tbody>
+    </table>
+  </aside>
+
+  <footer>
+    <hr title="Information about this document"/>
+    <p>This <code>footer</code> starts with an <code>hr</code>, followed by two <code>p</code>s.</p>
+    <p>Last update: <time>2015-08-12</time>.</p>
+  </footer>
+</article>
+```
+*/
+.l-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.l-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 25px 20px; }
+  @media (min-width: 768px) {
+    .l-container {
+      padding: 50px 20px; } }
+
+.l-padding-vert {
+  padding: 25px 0; }
+
+.s-bg-hopbush {
+  background: #c69; }
+
+.s-bg-bouquet {
+  background: #b37399; }
+
+.s-bg-venus {
+  background: #998099; }
+
+.s-bg-patina {
+  background: #699; }
+
+.s-bg-nebula {
+  background: #d2e1dd; }
+
+.s-bg-white {
+  background: #fff; }
+
+.s-bg-dawn-pink {
+  background: #f2ece4; }
+
+.s-bg-wafer {
+  background: #e1d7d2; }
+
+.s-bg-iron {
+  background: #dadbdf; }
+
+.s-bg-regent-grey {
+  background: #808c99; }
+
+.s-bg-pale-sky {
+  background: #6b717f; }
+
+.s-bg-midnight-blue {
+  background: #036; }
+
+/*doc
+---
+title: backgrounds
+name: 01/backgrounds
+category: skin
+---
+
+```html_example
+<div class="s-bg-hopbush" style="padding: 20px; margin: 5px 0;">Background Hopbush</div>
+<div class="s-bg-bouquet" style="padding: 20px; margin: 5px 0;">Background Bouquet</div>
+<div class="s-bg-venus" style="padding: 20px; margin: 5px 0;">Background Venus</div>
+<div class="s-bg-patina" style="padding: 20px; margin: 5px 0;">Background Patina</div>
+<div class="s-bg-nebula" style="padding: 20px; margin: 5px 0;">Background Nebula</div>
+<div class="s-bg-white" style="padding: 20px; margin: 5px 0;">Background White</div>
+<div class="s-bg-dawn-pink" style="padding: 20px; margin: 5px 0;">Background Dawn Pink</div>
+<div class="s-bg-wafer" style="padding: 20px; margin: 5px 0;">Background Wafer</div>
+<div class="s-bg-iron" style="padding: 20px; margin: 5px 0;">Background Iron</div>
+<div class="s-bg-regent-grey" style="padding: 20px; margin: 5px 0;">Background Regent Grey</div>
+<div class="s-bg-pale-sky" style="padding: 20px; margin: 5px 0;">Background Pale Sky</div>
+<div class="s-bg-midnight-blue" style="padding: 20px; margin: 5px 0;">Background Midnight Blue</div>
+```
+*/
+.t-sans-black {
+  font-family: 'SourceSansPro-Black', sans-serif; }
+
+.t-sans-black-italic {
+  font-family: 'SourceSansPro-BlackItalic', sans-serif; }
+
+.t-sans-bold {
+  font-family: 'SourceSansPro-Bold', sans-serif; }
+
+.t-sans-bold-italic {
+  font-family: 'SourceSansPro-BoldItalic', sans-serif; }
+
+.t-sans-extra-light {
+  font-family: 'SourceSansPro-ExtraLight', sans-serif; }
+
+.t-sans-extra-light-italic {
+  font-family: 'SourceSansPro-ExtraLightItalic', sans-serif; }
+
+.t-sans-italic {
+  font-family: 'SourceSansPro-Italic', sans-serif; }
+
+.t-sans-light {
+  font-family: 'SourceSansPro-Light', sans-serif; }
+
+.t-sans-light-italic {
+  font-family: 'SourceSansPro-LightItalic', sans-serif; }
+
+.t-sans-regular {
+  font-family: 'SourceSansPro-Regular', sans-serif; }
+
+.t-sans-semibold {
+  font-family: 'SourceSansPro-Semibold', sans-serif; }
+
+.t-sans-semibold-italic {
+  font-family: 'SourceSansPro-SemiboldItalic', sans-serif; }
+
+/*doc
+---
+title: font families - SourceSansPro
+name: 01/font-families/sourcesanspro
+category: typography
+---
+
+```html_example
+<h1 class="t-sans-extra-light">SourceSansPro Extra Light</h1>
+<h1 class="t-sans-extra-light-italic">SourceSansPro Extra Light Italic</h1>
+<h1 class="t-sans-light">SourceSansPro Light</h1>
+<h1 class="t-sans-light-italic">SourceSansPro Light Italic</h1>
+<h1 class="t-sans-regular">SourceSansPro Regular</h1>
+<h1 class="t-sans-italic">SourceSansPro Italic</h1>
+<h1 class="t-sans-semibold">SourceSansPro Semibold</h1>
+<h1 class="t-sans-semibold-italic">SourceSansPro Semibold Italic</h1>
+<h1 class="t-sans-bold">SourceSansPro Bold</h1>
+<h1 class="t-sans-bold-italic">SourceSansPro Bold Italic</h1>
+<h1 class="t-sans-black">SourceSansPro Black</h1>
+<h1 class="t-sans-black-italic">SourceSansPro Black Italic</h1>
+```
+*/
+.t-serif-bold {
+  font-family: 'SourceSerifPro-Bold', Georgia, 'Times New Roman', Times, serif; }
+
+.t-serif-regular {
+  font-family: 'SourceSerifPro-Regular', Georgia, 'Times New Roman', Times, serif; }
+
+.t-serif-semibold {
+  font-family: 'SourceSerifPro-SemiBold', Georgia, 'Times New Roman', Times, serif; }
+
+/*doc
+---
+title: font families - SourceSerifPro
+name: 02/font-families/sourceserifpro
+category: typography
+---
+
+```html_example
+<h1 class="t-serif-regular">SourceSerifPro Regular</h1>
+<h1 class="t-serif-semibold">SourceSerifPro Semibold</h1>
+<h1 class="t-serif-bold">SourceSerifPro Bold</h1>
+```
+*/
+.t-mono-black {
+  font-family: 'SourceCodePro-Black', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
+
+.t-mono-bold {
+  font-family: 'SourceCodePro-Bold', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
+
+.t-mono-extra-light {
+  font-family: 'SourceCodePro-ExtraLight', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
+
+.t-mono-medium {
+  font-family: 'SourceCodePro-Medium', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
+
+.t-mono-regular {
+  font-family: 'SourceCodePro-Regular', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
+
+.t-mono-semibold {
+  font-family: 'SourceCodePro-Semibold', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
+
+/*doc
+---
+title: font families - SourceCodePro
+name: 03/font-families/sourcecodepro
+category: typography
+---
+
+```html_example
+<h1 class="t-mono-extra-light">SourceCodePro Extra Light</h1>
+<h1 class="t-mono-bold-regular">SourceCodePro Regular</h1>
+<h1 class="t-mono-bold-medium">SourceCodePro Medium</h1>
+<h1 class="t-mono-bold-semibold">SourceCodePro Semibold</h1>
+<h1 class="t-mono-bold">SourceCodePro Bold</h1>
+<h1 class="t-mono-black">SourceCodePro Black</h1>
+```
+*/
+.t-size-xl {
+  font-size: 48px; }
+
+.t-size-large {
+  font-size: 32px; }
+
+.t-size-medium {
+  font-size: 20px; }
+
+.t-size-small {
+  font-size: 12px; }
+
+/*doc
+---
+title: font sizes
+name: 03/font-sizes
+category: typography
+---
+
+```html_example
+<h1 class="t-size-xl">This is an extra large heading</h1>
+<p>This is a test paragraph.</p>
+<h1 class="t-size-large">This is a large heading</h1>
+<p>This is a test paragraph.</p>
+<h1 class="t-size-medium">This is a medium heading</h1>
+<p>This is a test paragraph.</p>
+<h1 class="t-size-small">This is a small heading</h1>
+<p>This is a test paragraph.</p>
+```
+*/
+.t-color-hopbush {
+  color: #c69; }
+
+.t-color-bouquet {
+  color: #b37399; }
+
+.t-color-venus {
+  color: #998099; }
+
+.t-color-patina {
+  color: #699; }
+
+.t-color-nebula {
+  color: #d2e1dd; }
+
+.t-color-white {
+  color: #fff; }
+
+.t-color-dawn-pink {
+  color: #f2ece4; }
+
+.t-color-wafer {
+  color: #e1d7d2; }
+
+.t-color-iron {
+  color: #dadbdf; }
+
+.t-color-regent-grey {
+  color: #808c99; }
+
+.t-color-pale-sky {
+  color: #6b717f; }
+
+.t-color-midnight-blue {
+  color: #036; }
+
+/*doc
+---
+title: font colors
+name: 04/font-colors
+category: typography
+---
+
+```html_example
+
+<h1 class="t-color-hopbush">hopbush</h1>
+<p class="t-color-hopbush">with a test paragraph</p>
+<h1 class="t-color-bouquet">bouquet</h1>
+<p class="t-color-bouquet">with a test paragraph</p>
+<h1 class="t-color-venus">venus</h1>
+<p class="t-color-venus">with a test paragraph</p>
+<h1 class="t-color-patina">patina</h1>
+<p class="t-color-patina">with a test paragraph</p>
+<h1 class="t-color-nebula">nebula</h1>
+<p class="t-color-nebula">with a test paragraph</p>
+<h1 class="t-color-white">white</h1>
+<p class="t-color-white">with a test paragraph</p>
+<h1 class="t-color-dawn-pink">dawn pink</h1>
+<p class="t-color-dawn-pink">with a test paragraph</p>
+<h1 class="t-color-wafer">wafer</h1>
+<p class="t-color-wafer">with a test paragraph</p>
+<h1 class="t-color-iron">iron</h1>
+<p class="t-color-iron">with a test paragraph</p>
+<h1 class="t-color-regent-grey">regent grey</h1>
+<p class="t-color-regent-grey">with a test paragraph</p>
+<h1 class="t-color-pale-sky">pale sky</h1>
+<p class="t-color-pale-sky">with a test paragraph</p>
+<h1 class="t-color-midnight-blue">midnight blue</h1>
+<p class="t-color-midnight-blue">with a test paragraph</p>
+```
+*/
+.callout {
+  background: #699;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0; }
+
+.callout__heading {
+  color: #fff; }
+
+.callout__sub-heading {
+  font-size: 32px; }
+
+.callout__excerpt {
+  font-size: 20px; }
+
+.callout__link {
+  color: #036;
+  font-family: 'SourceSansPro-Regular', sans-serif; }
+  .callout__link:visited {
+    color: #036; }
+
+.callout__button {
+  color: #fff;
+  position: relative;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  border-bottom: 0px solid;
+  box-shadow: 0 0 1px transparent;
+  background: #c69;
+  display: inline-block;
+  font-size: 32px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  vertical-align: middle; }
+  .callout__button:visited {
+    color: #fff; }
+  .callout__button:hover, .callout__button:active, .callout__button:focus {
+    border-bottom: none;
+    transform: translateY(-10px); }
+    .callout__button:hover:before, .callout__button:active:before, .callout__button:focus:before {
+      transform: translateY(10px); }
+  .callout__button:before {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 10px);
+    border-color: #c69 transparent transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    content: '';
+    transition-duration: 0.3s;
+    transition-property: transform;
+    z-index: -1; }
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 220px; }
+  .logo:hover, .logo:active, .logo:focus {
+    border-bottom: none; }

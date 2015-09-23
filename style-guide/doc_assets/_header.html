@@ -1,0 +1,24 @@
+---
+layout: default
+css_library:
+  - hologram-css/github.css
+  - hologram-css/doc.css
+---
+
+<div class="l-container">
+  <nav>
+    <ul class="hologram-list">
+    <% @categories.sort.each do |category, file_name| %>
+      <li><a href="<%= file_name %>"><%= category %></a></li>
+    <% end %>
+    </ul>
+  </nav>
+
+  <h1><%= title %> styles</h1>
+
+  <section class="content">
+    <ul class="hologram-list">
+    <% @blocks.each do |b| %>
+      <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+    <% end %>
+    </ul>

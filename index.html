@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section class="callout">
+  <div class="l-container">
+    <h1 class="callout__heading">Sass from Zero to Sixty</h1>
+    <p class="callout__excerpt">Learn the basics of how to get a new project up and running, and then how to take that project and make it scale.  There will be something for all skill levels in this one!</p>
+    <h2 class="callout__sub-heading">7:00PM on October 6th, 2015 at <a class="callout__link" href="https://www.google.com/maps/dir/''/big+nerd+ranch+map/@33.7590818,-84.3660815,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f506d2043fd1b1:0xb2dcdbd4bcd9369e!2m2!1d-84.3317487!2d33.7590866" target="_blank"> Big Nerd Ranch</a></h2>
+
+    <a class="callout__button" href="#">RSVP</a>
+  </div>
+</section>
+
+<section>
+  <div class="l-container">
+    <h1 class="t-color-patina">Past Meetups</h1>
+    <ul>
+      {% for post in site.posts %}
+        <li class="l-padding-vert">
+          <h2><a class="t-size-xl" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <h3 class="t-color-patina">{{ post.date | date: "%b %-d, %Y" }}</h3>
+          <p>{{ post.excerpt }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
