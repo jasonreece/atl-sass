@@ -1,0 +1,25 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - header module
+// styles for the header module
+
+.header {
+  display: block;
+  @include attention() {
+    border-bottom: none;
+    outline: 3px solid color('hopbush');
+  }
+}
+
+.header__logo {
+  display: block;
+  margin: 0 auto;
+  height: 220px;
+  width: 220px;
+  @include attention() {
+    border-bottom: none;
+  }
+}
+
+.header__heading {
+  text-align: center;
+}
