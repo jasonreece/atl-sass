@@ -1117,6 +1117,8 @@ category: typography
 */
 .callout {
   background: #699;
+  border-bottom: 3px solid #c69;
+  border-top: 3px solid #c69;
   color: #fff;
   text-align: center;
   padding: 50px 0; }
@@ -1139,9 +1141,6 @@ category: typography
 
 .callout__link {
   color: #036;
-  position: relative;
-  top: 1px;
-  left: 1px;
   font-family: 'SourceSansPro-Regular', sans-serif; }
   .callout__link:visited {
     color: #036; }
@@ -1156,7 +1155,7 @@ category: typography
   background: #c69;
   display: inline-block;
   font-size: 32px;
-  margin-top: 30px;
+  margin-top: 35px;
   padding: 10px 20px;
   transform: translateZ(0);
   transition-duration: 0.3s;
@@ -1164,6 +1163,8 @@ category: typography
   vertical-align: middle; }
   .callout__button:visited {
     color: #fff; }
+  .callout__button:hover, .callout__button:active, .callout__button:focus {
+    font-family: 'SourceSansPro-Regular', sans-serif; }
   .callout__button:before {
     position: absolute;
     bottom: 0;
@@ -1177,10 +1178,11 @@ category: typography
     z-index: -1; }
 
 .header {
-  display: block; }
+  display: block;
+  transition: background 0.4s ease-in-out; }
   .header:hover, .header:active, .header:focus {
     border-bottom: none;
-    outline: 3px solid #c69; }
+    background: #f2f2f2; }
 
 .header__logo {
   display: block;

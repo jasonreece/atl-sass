@@ -4,9 +4,10 @@
 
 .header {
   display: block;
+  transition: background 0.4s ease-in-out;
   @include attention() {
     border-bottom: none;
-    outline: 3px solid color('hopbush');
+    background: darken(color('white'), 5);
   }
 }
 
