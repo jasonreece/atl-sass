@@ -2,14 +2,6 @@
 // - - layout
 // global layout classes - height, width, padding, margin, etc.
 
-.l-flex {
-  display: flex;
-  flex-flow: row wrap;
-  // justify-content: space-around;
-  max-width: 1080px;
-  margin: auto;
-}
-
 .l-container {
   max-width: 1080px;
   margin: 0 auto;
