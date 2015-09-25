@@ -82,10 +82,27 @@ p + p {
 }
 
 a {
-  text-decoration: none;
   @include link-color(color('hopbush'));
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.3s, opacity 0.4s;
   @include attention() {
+    &:after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  &:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     border-bottom: 1px solid;
+    content: '';
+    opacity: 0;
+    padding-bottom: 2px;
+    transition: transform 0.3s, opacity 0.4s;
+    transform: translateX(-20px);
   }
 }
 
