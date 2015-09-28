@@ -1,0 +1,11 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - footer module
+// styles for the footer module
+
+.footer__bnr-logo {
+  display: inline-block;
+  width: 224px;
+  &:after {
+    display: none;
+  }
+}
