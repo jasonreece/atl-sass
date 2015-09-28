@@ -18,9 +18,11 @@ layout: default
     <ul>
       {% for post in site.posts offset:1 %}
         <li class="l-padding-vert">
-          <h2><a class="s-hover-effect t-size-large" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-          <h3 class="t-color-patina">{{ post.date | date: "%b %-d, %Y" }}</h3>
-          <p>{{ post.excerpt }}</p>
+          <a class="post" href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post__heading">{{ post.title }}</h2>
+            <h3 class="t-color-patina">{{ post.date | date: "%b %-d, %Y" }}</h3>
+            <p>{{ post.excerpt }}</p>
+          </a>
         </li>
       {% endfor %}
     </ul>

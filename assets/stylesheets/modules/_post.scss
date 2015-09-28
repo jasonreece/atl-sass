@@ -1,0 +1,22 @@
+// - - - - - - - - - - - - - - - - - - -
+// - - post module
+// styles for the post module
+
+.post {
+  display: block;
+  p {
+    color: darken(color('pale-sky'), 15) !important;
+  }
+  @include attention() {
+    .post__heading {
+      @include braces-rollover;
+    }
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.post__heading {
+  @include braces;
+}
