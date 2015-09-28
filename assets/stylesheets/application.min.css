@@ -996,13 +996,12 @@ category: typography
     border-bottom: 2px solid; }
 
 .callout__button {
-  color: #fff;
+  color: #036;
   position: relative;
   backface-visibility: hidden;
   border-radius: 5px;
   border-bottom: 0px solid;
   background: #fff;
-  color: #036;
   display: inline-block;
   font-size: 32px;
   margin-top: 35px;
@@ -1012,7 +1011,7 @@ category: typography
   vertical-align: middle;
   z-index: 3; }
   .callout__button:visited {
-    color: #fff; }
+    color: #036; }
   .callout__button:hover, .callout__button:active, .callout__button:focus {
     background: #036;
     color: #fff; }

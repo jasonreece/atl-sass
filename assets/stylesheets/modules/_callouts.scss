@@ -39,13 +39,12 @@
 }
 
 .callout__button {
-  @include link-color(color('white'));
+  @include link-color(color('midnight-blue'));
   position: relative;
   backface-visibility: hidden;
   border-radius: 5px;
   border-bottom: 0px solid;
   background: color('white');
-  color: color('midnight-blue');
   display: inline-block;
   font-size: font-size('large');
   margin-top: 35px;
