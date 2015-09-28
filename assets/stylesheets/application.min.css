@@ -969,7 +969,8 @@ category: typography
 */
 .callout {
   background: #699;
-  color: #d2e1dd;
+  color: #fff;
+  font-family: 'SourceSansPro-Regular', sans-serif;
   text-align: center;
   padding: 25px 0; }
   .callout:hover .callout__button, .callout:active .callout__button, .callout:focus .callout__button {
@@ -982,11 +983,6 @@ category: typography
   color: #fff;
   font-family: 'SourceSansPro-Bold', sans-serif; }
 
-.callout__sub-heading {
-  color: #fff;
-  font-family: 'SourceSansPro-Regular', sans-serif;
-  font-size: 32px; }
-
 .callout__excerpt {
   font-size: 20px;
   margin: 0 auto;
@@ -996,6 +992,8 @@ category: typography
   color: #036; }
   .callout__link:visited {
     color: #036; }
+  .callout__link:after {
+    border-bottom: 2px solid; }
 
 .callout__button {
   color: #fff;

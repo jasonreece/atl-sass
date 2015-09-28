@@ -4,11 +4,12 @@
 
 .callout {
   background: color('patina');
-  color: color('nebula');
+  color: color('white');
+  font-family: sans('regular');
   text-align: center;
   padding: 25px 0;
   @include attention() {
-    // callout button
+    // lift callout button
     .callout__button {
       border-bottom: none;
       transform: translateY(-10px);
@@ -24,12 +25,6 @@
   font-family: sans('bold');
 }
 
-.callout__sub-heading {
-  color: color('white');
-  font-family: sans('regular');
-  font-size: font-size('large');
-}
-
 .callout__excerpt {
   font-size: font-size('medium');
   margin: 0 auto;
@@ -38,6 +33,9 @@
 
 .callout__link {
   @include link-color(color('midnight-blue'));
+  &:after {
+    border-bottom: 2px solid;
+  }
 }
 
 .callout__button {
