@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Sass from Zero to Sixty"
-excerpt: "Learn the basics of how to get a new project up and running, and then how to take that project and make it scale. There will be something for all skill levels in this one!"
+excerpt: "Come take a look inside the new atlsass.com website.&nbsp;  Jason Reece will be discussing the basic setup of a new project, and then sharing some of the sassy @mixins, @functions, and effects used across the site.&nbsp;  There'll be something for all skill levels in this one!"
 date: "2015-10-13"
 time: "7:00pm"
-rsvp_id: 321321321
+rsvp_id: 225680054
 ---
 
-Learn the basics of how to get a new project up and running, and then how to take that project and make it scale. There will be something for all skill levels in this one!
+Come take a look inside the new [atlsass.com](http://atlsass.com) website.  Jason Reece will be discussing the basic setup of a new project, and then sharing some of the sassy @mixins, @functions, and effects used across the site.  There'll be something for all skill levels in this one!
