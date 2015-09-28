@@ -980,10 +980,11 @@ category: typography
 
 .callout__heading {
   color: #fff;
-  font-family: 'SourceSansPro-Regular', sans-serif; }
+  font-family: 'SourceSansPro-Bold', sans-serif; }
 
 .callout__sub-heading {
   color: #fff;
+  font-family: 'SourceSansPro-Regular', sans-serif;
   font-size: 32px; }
 
 .callout__excerpt {
