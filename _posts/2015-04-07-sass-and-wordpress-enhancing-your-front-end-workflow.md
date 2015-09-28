@@ -2,6 +2,7 @@
 layout: post
 title:  "Sass and Wordpress: Enhancing your Front End Workflow"
 date:   2015-04-07
+excerpt: "Aisha Henderson will show us how to get started with Sass and Wordpress using Underscores as the starter theme."
 ---
 
 This months speaker will be Aisha Henderson.  [@ah_webdesign](https://twitter.com/ah_webdesign).

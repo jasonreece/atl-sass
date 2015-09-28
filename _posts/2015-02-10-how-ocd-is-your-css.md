@@ -2,6 +2,7 @@
 layout: post
 title:  "How OCD is your CSS"
 date:   2015-03-10
+excerpt: "A look at css best practices with Jason Reece"
 ---
 
 A look at css best practices with [@jason_reece](https://twitter.com/jason_reece).
