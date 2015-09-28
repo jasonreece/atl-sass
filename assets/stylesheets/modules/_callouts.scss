@@ -4,11 +4,9 @@
 
 .callout {
   background: color('patina');
-  border-bottom: 3px solid color('hopbush');
-  border-top: 3px solid color('hopbush');
-  color: color('white');
+  color: color('nebula');
   text-align: center;
-  padding: 50px 0;
+  padding: 25px 0;
   @include attention() {
     // callout button
     .callout__button {
@@ -23,9 +21,11 @@
 
 .callout__heading {
   color: color('white');
+  font-family: sans('regular');
 }
 
 .callout__sub-heading {
+  color: color('white');
   font-size: font-size('large');
 }
 
@@ -37,7 +37,6 @@
 
 .callout__link {
   @include link-color(color('midnight-blue'));
-  font-family: sans('regular');
 }
 
 .callout__button {
@@ -46,30 +45,37 @@
   backface-visibility: hidden;
   border-radius: 5px;
   border-bottom: 0px solid;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  background: color('hopbush');
+  background: color('white');
+  color: color('midnight-blue');
   display: inline-block;
   font-size: font-size('large');
   margin-top: 35px;
   padding: 10px 20px;
   transform: translateZ(0);
-  transition-duration: 0.3s;
-  transition-property: transform;
+  transition: all 0.3s;
   vertical-align: middle;
+  z-index: 3;
   @include attention() {
-    font-family: sans('regular');
+    background: color('midnight-blue');
+    color: color('white');
+    &:before {
+      border-color: color('midnight-blue') transparent transparent transparent;
+    }
   }
 
   &:before {
     position: absolute;
     bottom: 0;
     left: calc(50% - 10px);
-    border-color: color('hopbush') transparent transparent transparent;
+    border-color: color('white') transparent transparent transparent;
     border-style: solid;
     border-width: 10px 10px 0 10px;
     content: '';
-    transition-duration: 0.3s;
-    transition-property: transform;
+    transition: all 0.3s;
     z-index: -1;
+  }
+
+  &:after {
+    display: none;
   }
 }

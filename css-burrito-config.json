@@ -10,7 +10,9 @@
       "modulesImportFile": "_modules.scss",
       "moduleFiles": [
         "_callouts.scss",
-        "_header.scss"
+        "_footer.scss",
+        "_header.scss",
+        "_post.scss"
       ]
     }
   },

@@ -18,17 +18,10 @@ category: typography
 
 ```html_example
 <h1 class="t-sans-extra-light">SourceSansPro Extra Light</h1>
-<h1 class="t-sans-extra-light-italic">SourceSansPro Extra Light Italic</h1>
 <h1 class="t-sans-light">SourceSansPro Light</h1>
-<h1 class="t-sans-light-italic">SourceSansPro Light Italic</h1>
 <h1 class="t-sans-regular">SourceSansPro Regular</h1>
 <h1 class="t-sans-italic">SourceSansPro Italic</h1>
-<h1 class="t-sans-semibold">SourceSansPro Semibold</h1>
-<h1 class="t-sans-semibold-italic">SourceSansPro Semibold Italic</h1>
 <h1 class="t-sans-bold">SourceSansPro Bold</h1>
-<h1 class="t-sans-bold-italic">SourceSansPro Bold Italic</h1>
-<h1 class="t-sans-black">SourceSansPro Black</h1>
-<h1 class="t-sans-black-italic">SourceSansPro Black Italic</h1>
 ```
 */
 
@@ -39,44 +32,7 @@ category: typography
   }
 }
 
-/*doc
----
-title: font families - SourceSerifPro
-name: 02/font-families/sourceserifpro
-category: typography
----
-
-```html_example
-<h1 class="t-serif-regular">SourceSerifPro Regular</h1>
-<h1 class="t-serif-semibold">SourceSerifPro Semibold</h1>
-<h1 class="t-serif-bold">SourceSerifPro Bold</h1>
-```
-*/
-
-// create utility classes for each mono font
-@each $key, $value in map-deep-get($fonts, 'font-family', 'mono'){
-  .t-mono-#{$key}{
-    font-family: $value;
-  }
-}
-
-/*doc
----
-title: font families - SourceCodePro
-name: 03/font-families/sourcecodepro
-category: typography
----
-
-```html_example
-<h1 class="t-mono-extra-light">SourceCodePro Extra Light</h1>
-<h1 class="t-mono-bold-regular">SourceCodePro Regular</h1>
-<h1 class="t-mono-bold-medium">SourceCodePro Medium</h1>
-<h1 class="t-mono-bold-semibold">SourceCodePro Semibold</h1>
-<h1 class="t-mono-bold">SourceCodePro Bold</h1>
-<h1 class="t-mono-black">SourceCodePro Black</h1>
-```
-*/
-
+// create utility classes for each font size
 @each $key, $value in map-get($fonts, 'font-size-multiplier') {
   .t-size-#{$key} {
     font-size: font-size($key);
@@ -116,7 +72,6 @@ category: typography
 ---
 
 ```html_example
-
 <h1 class="t-color-hopbush">hopbush</h1>
 <p class="t-color-hopbush">with a test paragraph</p>
 <h1 class="t-color-bouquet">bouquet</h1>

@@ -147,7 +147,7 @@ table th {
   list-style: none;
 }
 
-.hologram-list a {
+/*.hologram-list a {
   text-decoration: none;
 }
 
@@ -156,7 +156,4 @@ table th {
 .hologram-list a:active {
   text-decoration: underline;
 }
-
-.hologram-list a:visited {
-  color: blue;
-}
+*/

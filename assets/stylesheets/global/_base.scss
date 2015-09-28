@@ -17,30 +17,6 @@
   }
 }
 
-// create @font-face for all serif fonts
-@each $font-family in map-deep-get($fonts, 'font-face', 'serif') {
-  @font-face {
-    font-family: $font-family;
-    src:
-      url('../fonts/serif/#{$font-family}/#{$font-family}.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/serif/#{$font-family}/#{$font-family}.woff') format('woff'),
-      url('../fonts/serif/#{$font-family}/#{$font-family}.ttf') format('truetype'),
-      url('../fonts/serif/#{$font-family}/#{$font-family}.svg##{$font-family}') format('svg');
-  }
-}
-
-// create @font-face for all mono fonts
-@each $font-family in map-deep-get($fonts, 'font-face', 'mono') {
-  @font-face {
-    font-family: $font-family;
-    src:
-      url('../fonts/mono/#{$font-family}/#{$font-family}.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/mono/#{$font-family}/#{$font-family}.woff') format('woff'),
-      url('../fonts/mono/#{$font-family}/#{$font-family}.ttf') format('truetype'),
-      url('../fonts/mono/#{$font-family}/#{$font-family}.svg##{$font-family}') format('svg');
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -83,27 +59,9 @@ p + p {
 
 a {
   @include link-color(color('hopbush'));
-  position: relative;
+  @include underline;
+  @include underline-rollover;
   text-decoration: none;
-  transition: transform 0.3s, opacity 0.4s;
-  @include attention() {
-    &:after {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  &:after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid;
-    content: '';
-    opacity: 0;
-    padding-bottom: 2px;
-    transition: transform 0.3s, opacity 0.4s;
-    transform: translateX(-20px);
-  }
 }
 
 strong {
@@ -122,11 +80,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-hr {
-  background: color('patina');
-  height: 3px;
 }
 
 /*doc

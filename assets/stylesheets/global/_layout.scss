@@ -5,6 +5,7 @@
 .l-container {
   max-width: 1080px;
   margin: 0 auto;
+  overflow: hidden;
   padding: 25px 20px;
   @include breakpoint(bp('tablet')){
     padding: 50px 20px;

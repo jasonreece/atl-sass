@@ -52,6 +52,68 @@
   }
 }
 
+// underline that slides in on hover
+@mixin underline {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s, opacity 0.4s;
+  &:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid;
+    content: '';
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.4s;
+    transform: translateX(-20px);
+  }
+}
+
+@mixin underline-rollover {
+  @include attention() {
+    &:after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+// adds curly braces on hover
+@mixin braces {
+  position: relative;
+  font-size: font-size('large');
+  transition: transform 0.3s, opacity 0.4s;
+  &:before,
+  &:after {
+    position: absolute;
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.4s;
+  }
+  &:before {
+    content: '{';
+    margin-left: -14px;
+    transform: translateX(-20px);
+  }
+  &:after {
+    margin-left: 5px;
+    border-bottom: none;
+    content: '}';
+    transform: translateX(20px);
+  }
+}
+
+@mixin braces-rollover {
+  &:before,
+  &:after {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 
 // - - - - - - - - - - - - - - - - - - -
 // - - functions
@@ -75,35 +137,11 @@
   @return null;
 }
 
-// sets font-family with key from the roboto list
+// sets font-family with key from the sans list
 // usage: font-family: sans('thin');
-// returns: "Roboto-Thin", sans-serif
+// returns: 'SourceSansPro-Light', sans-serif
 @function sans($key) {
   $font: map-deep-get($fonts, 'font-family', 'sans');
-  @if map-has-key($font, $key) {
-    @return map-get($font, $key);
-  }
-  @warn "Unknown `#{$key}` in $fonts.";
-  @return null;
-}
-
-// sets font-family with key from the aileron list
-// usage: font-family: serif('thin');
-// returns: "Aileron-Thin", sans-serif
-@function serif($key) {
-  $font: map-deep-get($fonts, 'font-family', 'serif');
-  @if map-has-key($font, $key) {
-    @return map-get($font, $key);
-  }
-  @warn "Unknown `#{$key}` in $fonts.";
-  @return null;
-}
-
-// sets font-family with key from the aileron list
-// usage: font-family: serif('thin');
-// returns: "Aileron-Thin", sans-serif
-@function mono($key) {
-  $font: map-deep-get($fonts, 'font-family', 'mono');
   @if map-has-key($font, $key) {
     @return map-get($font, $key);
   }
@@ -123,6 +161,7 @@
   @return null;
 }
 
+// get color from $colors map
 @function color($key) {
   @if map-has-key($colors, $key) {
     @return map-get($colors, $key);
@@ -130,8 +169,6 @@
   @warn "Unknown `#{$key}` in $fonts.";
   @return null;
 }
-
-// - - grid
 
 
 // - - - - - - - - - - - - - - - - - - -

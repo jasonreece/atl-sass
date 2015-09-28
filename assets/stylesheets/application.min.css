@@ -325,28 +325,12 @@ td, th {
   text-align: center; }
 
 @font-face {
-  font-family: 'SourceSansPro-Black';
-  src: url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.woff') format('woff'), url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Black/SourceSansPro-Black.svg#SourceSansPro-Black') format('svg'); }
-
-@font-face {
-  font-family: 'SourceSansPro-BlackItalic';
-  src: url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-BlackItalic/SourceSansPro-BlackItalic.svg#SourceSansPro-BlackItalic') format('svg'); }
-
-@font-face {
   font-family: 'SourceSansPro-Bold';
   src: url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.woff') format('woff'), url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Bold/SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg'); }
 
 @font-face {
-  font-family: 'SourceSansPro-BoldItalic';
-  src: url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-BoldItalic/SourceSansPro-BoldItalic.svg#SourceSansPro-BoldItalic') format('svg'); }
-
-@font-face {
   font-family: 'SourceSansPro-ExtraLight';
   src: url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.woff') format('woff'), url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-ExtraLight/SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight') format('svg'); }
-
-@font-face {
-  font-family: 'SourceSansPro-ExtraLightItalic';
-  src: url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-ExtraLightItalic/SourceSansPro-ExtraLightItalic.svg#SourceSansPro-ExtraLightItalic') format('svg'); }
 
 @font-face {
   font-family: 'SourceSansPro-Italic';
@@ -357,60 +341,8 @@ td, th {
   src: url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.woff') format('woff'), url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Light/SourceSansPro-Light.svg#SourceSansPro-Light') format('svg'); }
 
 @font-face {
-  font-family: 'SourceSansPro-LightItalic';
-  src: url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-LightItalic/SourceSansPro-LightItalic.svg#SourceSansPro-LightItalic') format('svg'); }
-
-@font-face {
   font-family: 'SourceSansPro-Regular';
   src: url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.woff') format('woff'), url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Regular/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg'); }
-
-@font-face {
-  font-family: 'SourceSansPro-Semibold';
-  src: url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.woff') format('woff'), url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-Semibold/SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg'); }
-
-@font-face {
-  font-family: 'SourceSansPro-SemiboldItalic';
-  src: url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.woff') format('woff'), url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.ttf') format('truetype'), url('../fonts/sans/SourceSansPro-SemiboldItalic/SourceSansPro-SemiboldItalic.svg#SourceSansPro-SemiboldItalic') format('svg'); }
-
-@font-face {
-  font-family: 'SourceSerifPro-Bold';
-  src: url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.woff') format('woff'), url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.ttf') format('truetype'), url('../fonts/serif/SourceSerifPro-Bold/SourceSerifPro-Bold.svg#SourceSerifPro-Bold') format('svg'); }
-
-@font-face {
-  font-family: 'SourceSerifPro-Regular';
-  src: url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.woff') format('woff'), url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.ttf') format('truetype'), url('../fonts/serif/SourceSerifPro-Regular/SourceSerifPro-Regular.svg#SourceSerifPro-Regular') format('svg'); }
-
-@font-face {
-  font-family: 'SourceSerifPro-Semibold';
-  src: url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.woff') format('woff'), url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.ttf') format('truetype'), url('../fonts/serif/SourceSerifPro-Semibold/SourceSerifPro-Semibold.svg#SourceSerifPro-Semibold') format('svg'); }
-
-@font-face {
-  font-family: 'SourceCodePro-Black';
-  src: url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.woff') format('woff'), url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Black/SourceCodePro-Black.svg#SourceCodePro-Black') format('svg'); }
-
-@font-face {
-  font-family: 'SourceCodePro-Bold';
-  src: url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.woff') format('woff'), url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Bold/SourceCodePro-Bold.svg#SourceCodePro-Bold') format('svg'); }
-
-@font-face {
-  font-family: 'SourceCodePro-ExtraLight';
-  src: url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.woff') format('woff'), url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-ExtraLight/SourceCodePro-ExtraLight.svg#SourceCodePro-ExtraLight') format('svg'); }
-
-@font-face {
-  font-family: 'SourceCodePro-Light';
-  src: url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.woff') format('woff'), url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Light/SourceCodePro-Light.svg#SourceCodePro-Light') format('svg'); }
-
-@font-face {
-  font-family: 'SourceCodePro-Medium';
-  src: url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.woff') format('woff'), url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Medium/SourceCodePro-Medium.svg#SourceCodePro-Medium') format('svg'); }
-
-@font-face {
-  font-family: 'SourceCodePro-Regular';
-  src: url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.woff') format('woff'), url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Regular/SourceCodePro-Regular.svg#SourceCodePro-Regular') format('svg'); }
-
-@font-face {
-  font-family: 'SourceCodePro-Semibold';
-  src: url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.woff') format('woff'), url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.ttf') format('truetype'), url('../fonts/mono/SourceCodePro-Semibold/SourceCodePro-Semibold.svg#SourceCodePro-Semibold') format('svg'); }
 
 * {
   box-sizing: border-box; }
@@ -440,12 +372,26 @@ p + p {
   margin: 10px 0; }
 
 a {
-  text-decoration: none;
-  color: #c69; }
+  color: #c69;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s, opacity 0.4s;
+  text-decoration: none; }
   a:visited {
     color: #c69; }
-  a:hover, a:active, a:focus {
-    border-bottom: 1px solid; }
+  a:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid;
+    content: '';
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.4s;
+    transform: translateX(-20px); }
+  a:hover:after, a:active:after, a:focus:after {
+    opacity: 1;
+    transform: translateX(0); }
 
 strong {
   font-family: 'SourceSansPro-Bold', sans-serif; }
@@ -460,10 +406,6 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
-
-hr {
-  background: #699;
-  height: 3px; }
 
 /*doc
 ---
@@ -825,15 +767,10 @@ category: base
 </article>
 ```
 */
-.l-flex {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1080px;
-  margin: auto; }
-
 .l-container {
   max-width: 1080px;
   margin: 0 auto;
+  overflow: hidden;
   padding: 25px 20px; }
   @media (min-width: 768px) {
     .l-container {
@@ -886,37 +823,25 @@ category: skin
 ---
 
 ```html_example
-<div class="s-bg-hopbush" style="padding: 20px; margin: 5px 0;">Background Hopbush</div>
-<div class="s-bg-bouquet" style="padding: 20px; margin: 5px 0;">Background Bouquet</div>
-<div class="s-bg-venus" style="padding: 20px; margin: 5px 0;">Background Venus</div>
-<div class="s-bg-patina" style="padding: 20px; margin: 5px 0;">Background Patina</div>
+<div class="s-bg-hopbush" style="padding: 20px; margin: 5px 0; color: #fff;">Background Hopbush</div>
+<div class="s-bg-bouquet" style="padding: 20px; margin: 5px 0; color: #fff;">Background Bouquet</div>
+<div class="s-bg-venus" style="padding: 20px; margin: 5px 0; color: #fff;">Background Venus</div>
+<div class="s-bg-patina" style="padding: 20px; margin: 5px 0; color: #fff;">Background Patina</div>
 <div class="s-bg-nebula" style="padding: 20px; margin: 5px 0;">Background Nebula</div>
 <div class="s-bg-white" style="padding: 20px; margin: 5px 0;">Background White</div>
 <div class="s-bg-dawn-pink" style="padding: 20px; margin: 5px 0;">Background Dawn Pink</div>
 <div class="s-bg-wafer" style="padding: 20px; margin: 5px 0;">Background Wafer</div>
 <div class="s-bg-iron" style="padding: 20px; margin: 5px 0;">Background Iron</div>
-<div class="s-bg-regent-grey" style="padding: 20px; margin: 5px 0;">Background Regent Grey</div>
-<div class="s-bg-pale-sky" style="padding: 20px; margin: 5px 0;">Background Pale Sky</div>
-<div class="s-bg-midnight-blue" style="padding: 20px; margin: 5px 0;">Background Midnight Blue</div>
+<div class="s-bg-regent-grey" style="padding: 20px; margin: 5px 0; color: #fff;">Background Regent Grey</div>
+<div class="s-bg-pale-sky" style="padding: 20px; margin: 5px 0; color: #fff;">Background Pale Sky</div>
+<div class="s-bg-midnight-blue" style="padding: 20px; margin: 5px 0; color: #fff;">Background Midnight Blue</div>
 ```
 */
-.t-sans-black {
-  font-family: 'SourceSansPro-Black', sans-serif; }
-
-.t-sans-black-italic {
-  font-family: 'SourceSansPro-BlackItalic', sans-serif; }
-
 .t-sans-bold {
   font-family: 'SourceSansPro-Bold', sans-serif; }
 
-.t-sans-bold-italic {
-  font-family: 'SourceSansPro-BoldItalic', sans-serif; }
-
 .t-sans-extra-light {
   font-family: 'SourceSansPro-ExtraLight', sans-serif; }
-
-.t-sans-extra-light-italic {
-  font-family: 'SourceSansPro-ExtraLightItalic', sans-serif; }
 
 .t-sans-italic {
   font-family: 'SourceSansPro-Italic', sans-serif; }
@@ -924,17 +849,8 @@ category: skin
 .t-sans-light {
   font-family: 'SourceSansPro-Light', sans-serif; }
 
-.t-sans-light-italic {
-  font-family: 'SourceSansPro-LightItalic', sans-serif; }
-
 .t-sans-regular {
   font-family: 'SourceSansPro-Regular', sans-serif; }
-
-.t-sans-semibold {
-  font-family: 'SourceSansPro-Semibold', sans-serif; }
-
-.t-sans-semibold-italic {
-  font-family: 'SourceSansPro-SemiboldItalic', sans-serif; }
 
 /*doc
 ---
@@ -945,73 +861,10 @@ category: typography
 
 ```html_example
 <h1 class="t-sans-extra-light">SourceSansPro Extra Light</h1>
-<h1 class="t-sans-extra-light-italic">SourceSansPro Extra Light Italic</h1>
 <h1 class="t-sans-light">SourceSansPro Light</h1>
-<h1 class="t-sans-light-italic">SourceSansPro Light Italic</h1>
 <h1 class="t-sans-regular">SourceSansPro Regular</h1>
 <h1 class="t-sans-italic">SourceSansPro Italic</h1>
-<h1 class="t-sans-semibold">SourceSansPro Semibold</h1>
-<h1 class="t-sans-semibold-italic">SourceSansPro Semibold Italic</h1>
 <h1 class="t-sans-bold">SourceSansPro Bold</h1>
-<h1 class="t-sans-bold-italic">SourceSansPro Bold Italic</h1>
-<h1 class="t-sans-black">SourceSansPro Black</h1>
-<h1 class="t-sans-black-italic">SourceSansPro Black Italic</h1>
-```
-*/
-.t-serif-bold {
-  font-family: 'SourceSerifPro-Bold', Georgia, 'Times New Roman', Times, serif; }
-
-.t-serif-regular {
-  font-family: 'SourceSerifPro-Regular', Georgia, 'Times New Roman', Times, serif; }
-
-.t-serif-semibold {
-  font-family: 'SourceSerifPro-SemiBold', Georgia, 'Times New Roman', Times, serif; }
-
-/*doc
----
-title: font families - SourceSerifPro
-name: 02/font-families/sourceserifpro
-category: typography
----
-
-```html_example
-<h1 class="t-serif-regular">SourceSerifPro Regular</h1>
-<h1 class="t-serif-semibold">SourceSerifPro Semibold</h1>
-<h1 class="t-serif-bold">SourceSerifPro Bold</h1>
-```
-*/
-.t-mono-black {
-  font-family: 'SourceCodePro-Black', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
-
-.t-mono-bold {
-  font-family: 'SourceCodePro-Bold', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
-
-.t-mono-extra-light {
-  font-family: 'SourceCodePro-ExtraLight', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
-
-.t-mono-medium {
-  font-family: 'SourceCodePro-Medium', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
-
-.t-mono-regular {
-  font-family: 'SourceCodePro-Regular', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
-
-.t-mono-semibold {
-  font-family: 'SourceCodePro-Semibold', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace; }
-
-/*doc
----
-title: font families - SourceCodePro
-name: 03/font-families/sourcecodepro
-category: typography
----
-
-```html_example
-<h1 class="t-mono-extra-light">SourceCodePro Extra Light</h1>
-<h1 class="t-mono-bold-regular">SourceCodePro Regular</h1>
-<h1 class="t-mono-bold-medium">SourceCodePro Medium</h1>
-<h1 class="t-mono-bold-semibold">SourceCodePro Semibold</h1>
-<h1 class="t-mono-bold">SourceCodePro Bold</h1>
-<h1 class="t-mono-black">SourceCodePro Black</h1>
 ```
 */
 .t-size-xl {
@@ -1088,7 +941,6 @@ category: typography
 ---
 
 ```html_example
-
 <h1 class="t-color-hopbush">hopbush</h1>
 <p class="t-color-hopbush">with a test paragraph</p>
 <h1 class="t-color-bouquet">bouquet</h1>
@@ -1117,11 +969,9 @@ category: typography
 */
 .callout {
   background: #699;
-  border-bottom: 3px solid #c69;
-  border-top: 3px solid #c69;
-  color: #fff;
+  color: #d2e1dd;
   text-align: center;
-  padding: 50px 0; }
+  padding: 25px 0; }
   .callout:hover .callout__button, .callout:active .callout__button, .callout:focus .callout__button {
     border-bottom: none;
     transform: translateY(-10px); }
@@ -1129,9 +979,11 @@ category: typography
       transform: translateY(10px); }
 
 .callout__heading {
-  color: #fff; }
+  color: #fff;
+  font-family: 'SourceSansPro-Regular', sans-serif; }
 
 .callout__sub-heading {
+  color: #fff;
   font-size: 32px; }
 
 .callout__excerpt {
@@ -1140,8 +992,7 @@ category: typography
   max-width: 75%; }
 
 .callout__link {
-  color: #036;
-  font-family: 'SourceSansPro-Regular', sans-serif; }
+  color: #036; }
   .callout__link:visited {
     color: #036; }
 
@@ -1151,46 +1002,106 @@ category: typography
   backface-visibility: hidden;
   border-radius: 5px;
   border-bottom: 0px solid;
-  box-shadow: 0 0 1px transparent;
-  background: #c69;
+  background: #fff;
+  color: #036;
   display: inline-block;
   font-size: 32px;
   margin-top: 35px;
   padding: 10px 20px;
   transform: translateZ(0);
-  transition-duration: 0.3s;
-  transition-property: transform;
-  vertical-align: middle; }
+  transition: all 0.3s;
+  vertical-align: middle;
+  z-index: 3; }
   .callout__button:visited {
     color: #fff; }
   .callout__button:hover, .callout__button:active, .callout__button:focus {
-    font-family: 'SourceSansPro-Regular', sans-serif; }
+    background: #036;
+    color: #fff; }
+    .callout__button:hover:before, .callout__button:active:before, .callout__button:focus:before {
+      border-color: #036 transparent transparent transparent; }
   .callout__button:before {
     position: absolute;
     bottom: 0;
     left: calc(50% - 10px);
-    border-color: #c69 transparent transparent transparent;
+    border-color: #fff transparent transparent transparent;
     border-style: solid;
     border-width: 10px 10px 0 10px;
     content: '';
-    transition-duration: 0.3s;
-    transition-property: transform;
+    transition: all 0.3s;
     z-index: -1; }
+  .callout__button:after {
+    display: none; }
+
+.footer__bnr-logo {
+  display: inline-block;
+  width: 224px; }
+  .footer__bnr-logo:after {
+    display: none; }
 
 .header {
   display: block;
-  transition: background 0.4s ease-in-out; }
-  .header:hover, .header:active, .header:focus {
-    border-bottom: none;
-    background: #f2f2f2; }
+  transition: all 0.4s ease-in-out; }
+  .header:hover .header__heading:before, .header:hover .header__heading:after, .header:active .header__heading:before, .header:active .header__heading:after, .header:focus .header__heading:before, .header:focus .header__heading:after {
+    opacity: 1;
+    transform: translateX(0px); }
+  .header:after {
+    display: none; }
 
 .header__logo {
   display: block;
   margin: 0 auto;
   height: 220px;
+  transition: transform 0.4s ease-in-out;
   width: 220px; }
-  .header__logo:hover, .header__logo:active, .header__logo:focus {
-    border-bottom: none; }
 
 .header__heading {
-  text-align: center; }
+  position: relative;
+  font-size: 32px;
+  transition: transform 0.3s, opacity 0.4s; }
+  .header__heading:before, .header__heading:after {
+    position: absolute;
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.4s; }
+  .header__heading:before {
+    content: '{';
+    margin-left: -14px;
+    transform: translateX(-20px); }
+  .header__heading:after {
+    margin-left: 5px;
+    border-bottom: none;
+    content: '}';
+    transform: translateX(20px); }
+
+.post {
+  display: block; }
+  .post p {
+    color: #484c55 !important; }
+  .post:hover .post__heading:before, .post:hover .post__heading:after, .post:active .post__heading:before, .post:active .post__heading:after, .post:focus .post__heading:before, .post:focus .post__heading:after {
+    opacity: 1;
+    transform: translateX(0px); }
+  .post:after {
+    display: none; }
+
+.post__heading {
+  position: relative;
+  font-size: 32px;
+  transition: transform 0.3s, opacity 0.4s; }
+  .post__heading:before, .post__heading:after {
+    position: absolute;
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.4s; }
+  .post__heading:before {
+    content: '{';
+    margin-left: -14px;
+    transform: translateX(-20px); }
+  .post__heading:after {
+    margin-left: 5px;
+    border-bottom: none;
+    content: '}';
+    transform: translateX(20px); }
