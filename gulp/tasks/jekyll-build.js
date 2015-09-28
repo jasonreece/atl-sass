@@ -8,6 +8,6 @@ var messages = {
 
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild);
-  return childProcess.spawn('jekyll', ['build', '--config', '_config_production.yml'], {stdio: 'inherit'})
+  return childProcess.spawn('jekyll', ['build'], {stdio: 'inherit'})
   .on('close', done);
 });

@@ -1,9 +1,9 @@
 # Site settings
 title: ATL Sass Meetup
+
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  "A monthly gathering for Sass developers. Interested in Sass? Use it every day? Heard about it once, and want to learn more? It doesn't matter how much you know already: bring something to work on, start something new, help someone else, or just enjoy the Sassy company."
+
 baseurl: ""
 
 img: /assets/img
