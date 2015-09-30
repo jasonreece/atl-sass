@@ -28,16 +28,3 @@ gulp.task('styles', ['sass-lint'], function() {
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest(stylesPath));
 });
-
-gulp.task('sass-lint', function () {
-  gulp.src([stylesPath + '**/*.scss', '!./assets/stylesheets/libs/**/*.scss'])
-    .pipe(sassLint())
-    .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
-});
-
-// gulp.task('watch', function() {
-//   gulp.watch(stylesPath + '**/*.scss', ['styles', 'reload']);
-// });
-
-// gulp.task('default', ['browser-sync', 'watch']);
