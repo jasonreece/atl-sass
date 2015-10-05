@@ -5,11 +5,10 @@ var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 var cssmin = require('gulp-minify-css');
-var sassLint = require('gulp-sass-lint');
 
 var stylesPath = 'assets/stylesheets/';
 
-gulp.task('styles', ['sass-lint'], function() {
+gulp.task('styles', function() {
   var onError = function(err) {
     notify.onError({
       title: "Gulp",
