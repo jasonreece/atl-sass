@@ -4,16 +4,13 @@ layout: default
 
 <header class="callout">
   <div class="l-container">
-    <h1 class="callout__heading">{{ page.title }}</h1>
+    <h1 class="t-color-white callout__heading">{{ page.title }}</h1>
+    <h2 class="t-color-white">{{ page.date | date: "%b %-d, %Y" }}</h2>
   </div>
 </header>
 
 <div class="l-container">
-  <div class="l-padding-vert">
-    <h2 class="t-color-patina">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h2>
-  </div>
-
-  <article>
+  <article class="post__landing">
     {{ content }}
   </article>
 </div>

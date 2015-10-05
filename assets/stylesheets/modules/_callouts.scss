@@ -21,8 +21,14 @@
 }
 
 .callout__heading {
-  color: color('white');
+  @include link-color(color('white'));
   font-family: sans('bold');
+  font-size: font-size('xl');
+  margin-bottom: 10px;
+}
+
+.callout__subheading {
+  margin-bottom: 10px;
 }
 
 .callout__excerpt {

@@ -53,9 +53,9 @@ h3 {
   font-size: font-size('medium');
 }
 
-p + p {
-  margin: 10px 0;
-}
+// p + p {
+//   margin: 10px 0;
+// }
 
 a {
   @include link-color(color('hopbush'));
@@ -80,6 +80,12 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+pre {
+  background: color('code-black');
+  color: #fff;
+  padding: 10px;
 }
 
 /*doc

@@ -20,3 +20,37 @@
 .post__heading {
   @include braces;
 }
+
+// - - - - - - - - - - - - - - - - - - -
+// - - post landing page
+
+.post__landing {
+  h2 {
+    font-size: font-size('xl');
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: font-size('large');
+    padding-bottom: 10px;
+  }
+
+  p {
+    padding-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  li {
+    position: relative;
+    &:before {
+      position: absolute;
+      left: -10px;
+      color: color('hopbush');
+      content: '\2022';
+    }
+  }
+}
