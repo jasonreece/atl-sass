@@ -13,4 +13,4 @@ markdown: kramdown
 
 exclude: ["node_modules", "gulp", "gulpfile.js", "package.json"]
 
-permalink: /:title/
+permalink: /:year-:month/:title/
