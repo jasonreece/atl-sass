@@ -53,10 +53,6 @@ h3 {
   font-size: font-size('medium');
 }
 
-// p + p {
-//   margin: 10px 0;
-// }
-
 a {
   @include link-color(color('hopbush'));
   @include underline;

@@ -56,7 +56,7 @@
 @mixin underline {
   position: relative;
   display: inline-block;
-  transition: transform 0.3s, opacity 0.4s;
+  // transition: transform 0.3s, opacity 0.4s;
   &:after {
     position: absolute;
     top: 100%;
