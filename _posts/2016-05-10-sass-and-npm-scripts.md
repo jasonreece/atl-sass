@@ -7,7 +7,21 @@ time: "7:00pm"
 rsvp_id: 230643460
 ---
 
-<!-- ## Install Node.js
+## Useful Links
+* download [Node.js](https://nodejs.org/en/).
+* a sample [starter template]({{ site.baseurl }}/assets/downloads/2016/05/npm-scripts.zip) file.
+
+## Blog Posts
+* [How to use npm as a build tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
+* [Why I left Gulp and Grunt for npm scripts](https://medium.freecodecamp.com/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8#.yrwb2fpu8)
+
+<!-- ## Need to install Node.js?
+
+Try running `node -v` in the command line
+
+You can download Node [here](https://nodejs.org/en/).
+
+
 
 ## Start with a package.json file
 
