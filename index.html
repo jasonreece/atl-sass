@@ -5,8 +5,7 @@ layout: default
   <div class="l-container">
     {% for post in site.posts limit:1 %}
       <a class="callout__heading" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <!-- <h2 class="callout__subheading">{{ post.time }} on {{ post.date | date: "%b %-d, %Y" }} at <a class="callout__link" href="https://www.google.com/maps/dir/''/big+nerd+ranch+map/@33.7590818,-84.3660815,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f506d2043fd1b1:0xb2dcdbd4bcd9369e!2m2!1d-84.3317487!2d33.7590866" target="_blank"> Big Nerd Ranch</a></h2> -->
-      <h2 class="callout__subheading">{{ post.time }} on May 10th, 2016 at <a class="callout__link" href="https://www.google.com/maps/dir/''/big+nerd+ranch+map/@33.7590818,-84.3660815,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f506d2043fd1b1:0xb2dcdbd4bcd9369e!2m2!1d-84.3317487!2d33.7590866" target="_blank"> Big Nerd Ranch</a></h2>
+      <h2 class="callout__subheading">{{ post.time }} on {{ post.event_date | date: "%b %-d, %Y" }} at <a class="callout__link" href="https://www.google.com/maps/dir/''/big+nerd+ranch+map/@33.7590818,-84.3660815,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x88f506d2043fd1b1:0xb2dcdbd4bcd9369e!2m2!1d-84.3317487!2d33.7590866" target="_blank"> Big Nerd Ranch</a></h2>
       <p class="callout__excerpt">{{ post.excerpt }}</p>
       <div class="callout__button-wrapper">
         <a class="callout__button" href="http://www.meetup.com/Atlanta-Sass-Meetup/events/{{ post.rsvp_id }}" target="_blank">RSVP</a>
